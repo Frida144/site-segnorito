@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleaccueil.css">
+        <link rel="icon" href="images/logo.png">
+        <!-- Google Font: Anton for h3 headings -->
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ======================================================
+        BARRE DE NAVIGATION FIXE EN HAUT DE LA PAGE
+    ====================================================== -->
+    <header class="navbar">
+        <nav class="header">
+            <!--Logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="photo du logo"> </a>
+            </div>
+            <!-- Checkbox caché pour gérer l'état du menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Bouton burger -->
+            <label for="menu-toggle" class="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </label>
+
+            <ul id="nav-menu" class="nav-items">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="epicerie.html">Epicérie fine</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="presentation">
+            <div class="presentation-slider" aria-roledescription="carousel" tabindex="0">
+                <div class="presentation-slide" style="background-image: url('images/Ai art Photos - Download Free High-Quality Pictures _ Freepik.jpg')"></div>
+                <div class="presentation-slide" style="background-image: url('images/Classic Guacamole Recipe - Etsy copy.jpg')"></div>
+                <div class="presentation-slide" style="background-image: url('images/image food truck.png')"></div>
+            </div>
+            <button class="presentation-arrow prev" aria-label="Image précédente">❮</button>
+            <button class="presentation-arrow next" aria-label="Image suivante">❯</button>
+            <div class="presentation-overlay"></div>
+            <div class="presentation-content">
+                <h1>¡Hola, hola!</h1>
+               <h2 class="presentation-subtitle">Bienvenue chez <strong>Señorito</strong>
+               </h2> 
+                <p class="presentation-text">Découvrez l'authenticité de la cuisine mexicaine à bord de notre food truck. 🌮</p>
+                <div class="presentation-buttons">
+                    <a href="menu.html" class="btn-primary">Découvrir le Menu</a>
+                    <a href="contact.html" class="btn-secondary">Nous Contacter</a>
+                    <!-- Bouton téléchargement du menu (fichier: images/Menu_senorito.png) -->
+                    <a href="images/Menu_senorito.png" download class="btn-download-menu" title="Télécharger le menu (PNG)">
+                        Télécharger le menu
+                        <span class="download-icon" aria-hidden="true">⬇</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--le trait de séparation-->
+        <div class="separation">
+            <span class="separation-line"></span>
+        </div>
+
+        <!--section du coup de coeur -->
+        <section class="coup-de-coeur">
+            <h2>🌮 Coup de cœur 🌮</h2>
+            <div class="conteneur">
+                <div class="section-photo">
+                    <img src="images/Firefly.jpg" alt="photo d'un burritos">
+                </div>
+                <div class="section-description">
+                    <h3>Burritos</h3>
+                    <div class="description-block">
+                        <p>Découvrez nos délicieux burritos, une explosion de saveurs mexicaines dans chaque bouchée ! Préparés avec des
+                             ingrédients frais et authentiques que vous choisisez vous-même parmi un large choix, comme dans un buffet à volonté.
+                             <span class="voir-plus-link" onclick="voirPlusMoins('suiteBurritos', this)">... <strong>Voir plus</strong></span><span class="suite-texte" id="suiteBurritos"> 
+                            Accompagnez-les d'une salsa maison et d'une boisson rafraîchissante pour une expérience culinaire complète. Venez savourer nos burritos dès aujourd'hui et laissez-vous 
+                            emporter par les délices du Mexique !</span></p>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                <span class="accordion-title">📦 Ingrédients</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Nos burritos sont garnis de viande juteuse, de riz parfumé, de haricots savoureux, de légumes croquants et de fromage fondant, 
+                                    le tout enveloppé dans une tortilla chaude et moelleuse. Que vous soyez amateur de viandeou végétarien, nous avons des options pour tous les goûts.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                <span class="accordion-title">⚠️ Allergènes</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Produits laitiers et peut contenir des traces de fruits à coques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--le trait de separtion-->
+        <label for="menu-toggle" class="separation">
+            <span class="separation-line"></span>
+        </label>
+
+        <!--section plat signature-->
+        <section class="plat-signature">
+            <h2>🥑 Plat signature 🥑
+ </h2>
+                <div class="plat-description">
+                    <div class="plat-description-container">
+                    <h3>Guacamole Maison</h3>
+                    <div class="description-block">
+                        <p>Plongez dans la fraîcheur de notre guacamole maison, préparé avec des avocats mûrs à la perfection et un mélange d'ingrédients authentiques. 
+                            Chaque portion est généreusement garnie de tomates juteuses, d'oignons croquants, de coriandre fraîche et d'une touche de jus de citron vert pour une explosion de saveurs mexicaines. 
+                            <span class="voir-plus-link" onclick="voirPlusMoins('suiteGuacamole', this)">... <strong>Voir plus</strong></span><span class="suite-texte" id="suiteGuacamole"> 
+                            Accompagnez-le de nos chips de maïs croustillantes pour une expérience culinaire inoubliable. Idéal en apéritif ou en accompagnement, notre guacamole maison est un incontournable pour tous les amateurs de cuisine mexicaine.</span></p>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                <span class="accordion-title">📦 Ingrédients</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Avocats frais, tomates, oignons, coriandre, jus de citron vert, sel et poivre. Servi avec des chips de maïs croustillantes.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                <span class="accordion-title">⚠️ Allergènes</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Peut contenir des allergènes selon la préparation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="plat-photo">
+                    <img src="images/Classic Guacamole Recipe - Etsy.jpg" alt="photo du guacamole">
+            </div>
+ </div>
+        </section>
+
+        <!--le trait de separtion-->
+        <label for="menu-toggle" class="separation">
+            <span class="separation-line"></span>
+        </label>
+<section class="a-propos">
+    <div class="a-propos-box">
+    <div class="a-propos-bg" style="background-image: url('images/image food truck.png')"></div>
+            <div class="a-propos-overlay"></div>
+            <div class="a-propos-content">
+            <h2>🌟 À propos de nous 🌟</h2>
+                <div class="a-propos-text">
+                    <p>Chez Señorito, nous sommes passionnées par la cuisine mexicaine authentique et nous nous engageons à offrir à nos clients une expérience culinaire inoubliable. 
+                        Notre food truck est bien plus qu'un simple lieu de restauration, c'est un voyage au cœur des saveurs mexicaines, où chaque plat est préparé avec amour et soin.</p>
+                    <p>Nous utilisons uniquement des ingrédients frais et de qualité, en privilégiant les produits locaux et de saison. Notre équipe dévouée travaille sans relâche pour créer des recettes traditionnelles tout en y ajoutant une touche moderne et innovante.</p>
+                    <p>Que vous soyez un amateur de tacos, un fan de burritos ou un adepte du guacamole, nous avons quelque chose pour satisfaire toutes les papilles. Rejoignez-nous chez Señorito et laissez-vous emporter par une aventure culinaire mexicaine unique !</p>
+                </div>
+                 </div>     
+</div>
+</section>
+      
+<!--le trait de separtion-->
+        <label for="menu-toggle" class="separation">
+            <span class="separation-line"></span>
+        </label>
+
+        <!--section avis clients (carousel, 3 visibles) -->
+        <section class="avis-clients">
+            <h2>🗣️ Avis Clients</h2>
+            <div class="avis-wrapper">
+                <button class="avis-arrow prev" aria-label="Précédent">‹</button>
+                <div class="avis-viewport">
+                    <div class="avis-track">
+                        <div class="avis-item">
+                            <div class="avis-card">
+                                    <div class="avis-inner">
+                                        <p class="avis-text">Une expérience culinaire incroyable ! Les tacos étaient délicieux et le service impeccable. Je recommande vivement Señorito.</p>
+                                        <div class="avis-stars" data-rating="5" aria-hidden="true">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p class="date">Il y a 3 mois</p>
+                                        <p class="avis-author">— Marie A.</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="avis-item">
+                            <div class="avis-card">
+                                    <div class="avis-inner">
+                                        <p class="avis-text">Le meilleur food truck de la ville ! Burritos généreux et savoureux, équipe sympathique.</p>
+                                        <div class="avis-stars" data-rating="4" aria-hidden="true">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p class="date">Il y a 2 semaines</p>
+                                        <p class="avis-author">— Julien P.</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="avis-item">
+                            <div class="avis-card">
+                                    <div class="avis-inner">
+                                        <p class="avis-text">Un véritable voyage au Mexique ! Le guacamole maison est à tomber.</p>
+                                        <div class="avis-stars" data-rating="5" aria-hidden="true">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p class="date">Il y a 1 semaines</p>
+                                        <p class="avis-author">— Sophie L.</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="avis-item">
+                            <div class="avis-card">
+                                    <div class="avis-inner">
+                                        <p class="avis-text">Très bon rapport qualité/prix, je reviens souvent pour les tacos.</p>
+                                        <div class="avis-stars" data-rating="4" aria-hidden="true">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p class="date">Il y a 6 jours</p>
+                                        <p class="avis-author">— Ahmed R.</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="avis-item">
+                            <div class="avis-card">
+                                    <div class="avis-inner">
+                                        <p class="avis-text">Service rapide et souriant, parfait pour manger sur le pouce.</p>
+                                        <div class="avis-stars" data-rating="5" aria-hidden="true">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p class="date">Il y a 3 jours</p>
+                                        <p class="avis-author">— Clara M.</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="avis-item">
+                            <div class="avis-card">
+                                    <div class="avis-inner">
+                                        <p class="avis-text">La meilleure salsa de la ville, produit frais et saveurs authentiques.</p>
+                                        <div class="avis-stars" data-rating="3" aria-hidden="true">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                        <p class="date">Il y a 7 heures</p>
+                                        <p class="avis-author">— Julien T.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="avis-arrow next" aria-label="Suivant">›</button>
+            </div>
+            <div class="avis-dots" aria-hidden="false"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-section footer-about">
+                    <h3>Señorito</h3>
+                    <p>Food truck toulousain </p>
+                        <P>Cuisine mexicaine authentique, préparée sur <br>place avec des ingrédients frais.</P>
+                </div>
+
+                <div class="footer-section footer-nav">
+                    <h3>Navigation</h3>
+                    <ul>
+                       <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="epicerie.html">Epicérie fine</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section footer-contact">
+                    <h3>Contact</h3>
+                    <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
+                    <p>Email: <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a></p>
+                    <p>Localisation: Toulouse</p>
+                </div>
+
+                <div class="footer-section footer-socials">
+                    <h3>Suivez-nous</h3>
+                    <div class="footer-socials-list">
+                         <a href="https://www.instagram.com/senorito_food_truck/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <p>&copy; 2025 Señorito — Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+function voirPlusMoins(idElement, element) {
+    let elementCache = document.getElementById(idElement);
+    
+    if (elementCache.style.display === "none" || elementCache.style.display === "") {
+        elementCache.style.display = "inline";
+        element.textContent = " [Voir moins]";
+        element.style.color = "#CE1126";
+    } else {
+        elementCache.style.display = "none";
+        element.textContent = "... Voir plus";
+        element.style.color = "#CE1126";
+    }
+}
+
+function toggleAccordion(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.accordion-icon');
+    
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        icon.textContent = "−";
+    } else {
+        content.style.display = "none";
+        icon.textContent = "+";
+    }
+}
+
+/* Carousel avis clients */
+(function(){
+    const track = document.querySelector('.avis-track');
+    if (!track) return;
+    const items = Array.from(track.children);
+    const prev = document.querySelector('.avis-arrow.prev');
+    const next = document.querySelector('.avis-arrow.next');
+    const viewport = document.querySelector('.avis-viewport');
+    const dotsContainer = document.querySelector('.avis-dots');
+
+    let index = 0; // slide index (item-based)
+    const visible = 3;
+    const maxIndex = Math.max(0, items.length - visible);
+    const pages = Math.max(1, Math.ceil(items.length / visible));
+    let autoId = null;
+    let dots = [];
+
+    function update() {
+        const gap = parseFloat(getComputedStyle(track).gap) || 16;
+        const itemWidth = items[0].getBoundingClientRect().width + gap;
+        track.style.transform = 'translateX(' + (-index * itemWidth) + 'px)';
+        updateDots();
+    }
+
+    function goToPage(page){
+        // page -> set index to first item of that page
+        const target = Math.min(page * visible, maxIndex);
+        index = target;
+        update();
+    }
+
+    function nextSlide(){ index = (index < maxIndex) ? index + 1 : 0; update(); }
+    function prevSlide(){ index = (index > 0) ? index - 1 : maxIndex; update(); }
+
+    next && next.addEventListener('click', ()=>{ nextSlide(); restartAuto(); });
+    prev && prev.addEventListener('click', ()=>{ prevSlide(); restartAuto(); });
+
+    function startAuto(){ autoId = setInterval(()=>{ nextSlide(); }, 4000); }
+    function stopAuto(){ if(autoId) { clearInterval(autoId); autoId = null; } }
+    function restartAuto(){ stopAuto(); startAuto(); }
+
+    viewport.addEventListener('mouseenter', stopAuto);
+    viewport.addEventListener('mouseleave', startAuto);
+
+    window.addEventListener('resize', update);
+
+    // dots
+    if(dotsContainer){
+        for(let p=0;p<pages;p++){
+            const d = document.createElement('button');
+            d.className = 'avis-dot';
+            d.setAttribute('aria-label','Page '+(p+1));
+            d.addEventListener('click', ()=>{ goToPage(p); restartAuto(); });
+            dotsContainer.appendChild(d);
+            dots.push(d);
+        }
+    }
+
+    function updateDots(){
+        if(!dots.length) return;
+        const active = Math.min(Math.floor(index / visible), pages - 1);
+        dots.forEach((dd,ii)=> dd.classList.toggle('active', ii===active));
+    }
+
+    // simple pointer swipe support
+    (function addPointerSwipe(){
+        let pointerDown = false;
+        let startX = 0;
+        let activeId = null;
+
+        viewport.addEventListener('pointerdown', (e)=>{
+            pointerDown = true;
+            startX = e.clientX;
+            stopAuto();
+            viewport.setPointerCapture(e.pointerId);
+            activeId = e.pointerId;
+        });
+
+        viewport.addEventListener('pointerup', (e)=>{
+            if(!pointerDown) return;
+            pointerDown = false;
+            const dx = e.clientX - startX;
+            if(Math.abs(dx) > 40){
+                if(dx < 0) nextSlide(); else prevSlide();
+            }
+            restartAuto();
+            try{ viewport.releasePointerCapture(activeId); }catch(err){}
+        });
+
+        viewport.addEventListener('pointercancel', ()=>{ pointerDown=false; restartAuto(); });
+    })();
+
+    // initial
+    setTimeout(()=>{ update(); startAuto(); }, 120);
+
+})();
+
+// Initialize review stars based on data-rating
+(function initStars(){
+    const inners = document.querySelectorAll('.avis-inner');
+    inners.forEach(inner=>{
+        const stars = inner.querySelector('.avis-stars');
+        if(!stars) return;
+        const rating = parseInt(stars.getAttribute('data-rating')) || 0;
+        const spans = Array.from(stars.querySelectorAll('.star'));
+        spans.forEach((s,i)=>{
+            s.classList.toggle('filled', i < rating);
+        });
+    });
+})();
+
+// Accordion for explication cards
+function toggleAccordionCard(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.accordion-icon');
+    
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        icon.textContent = "−";
+    } else {
+        content.style.display = "none";
+        icon.textContent = "+";
+    }
+}
+
+// Presentation carousel (autoplay + arrows + pause on hover + swipe)
+(function(){
+    const slides = Array.from(document.querySelectorAll('.presentation-slide'));
+    if(!slides.length) return;
+    let current = 0;
+    const intervalMs = 4000;
+    let timer = null;
+
+    function show(i){
+        slides.forEach((s,idx)=> s.classList.toggle('active', idx===i));
+        current = i;
+    }
+
+    function next(){ show((current + 1) % slides.length); }
+    function prev(){ show((current - 1 + slides.length) % slides.length); }
+
+    function start(){ stop(); timer = setInterval(next, intervalMs); }
+    function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+    function restart(){ stop(); start(); }
+
+    const btnNext = document.querySelector('.presentation-arrow.next');
+    const btnPrev = document.querySelector('.presentation-arrow.prev');
+    btnNext && btnNext.addEventListener('click', ()=>{ next(); restart(); });
+    btnPrev && btnPrev.addEventListener('click', ()=>{ prev(); restart(); });
+
+    const slider = document.querySelector('.presentation-slider');
+    slider && slider.addEventListener('mouseenter', stop);
+    slider && slider.addEventListener('mouseleave', start);
+
+    // touch swipe support
+    let startX = 0;
+    slider && slider.addEventListener('touchstart', (e)=>{ startX = e.touches[0].clientX; stop(); });
+    slider && slider.addEventListener('touchend', (e)=>{ const dx = e.changedTouches[0].clientX - startX; if(Math.abs(dx) > 40){ if(dx < 0) next(); else prev(); } restart(); });
+
+    // init
+    show(0);
+    start();
+
+    // expose for debugging if needed
+    window.presentationNext = next;
+    window.presentationPrev = prev;
+})();
+</script>
+</html>

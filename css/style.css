@@ -1,0 +1,371 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+/* Fonts: try local files first (place .woff2 in /fonts), fall back to system fonts.
+   Anton is loaded from Google Fonts in the page head. */
+@font-face{
+    font-family: 'Catchy Mager';
+    src: local('Catchy Mager'), url('fonts/CatchyMager.woff2') format('woff2'), url('fonts/CatchyMager.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'The Seasons';
+    src: local('The Seasons'), url('fonts/TheSeasons.woff2') format('woff2'), url('fonts/TheSeasons.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: #F5F1E6;
+    color: #333;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Heading and paragraph font assignments requested by user */
+h1, h3 {
+    font-family: 'Catchy Mager', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Anton', Impact, sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+p, li, .section-description p, .presentation-text, .a-propos-text, .description-block p {
+    font-family: 'The Seasons', Georgia, 'Times New Roman', serif;
+    
+}
+
+/*navbar avec position fixe */
+
+.navbar{
+    position: fixed;
+    background-color : white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: 1.7rem;
+    height: 5rem;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    width: 100%;
+    position: relative;
+}
+/*logo et nav-items avec z-index plus élevé */
+.logo{
+    z-index: 1100;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0.3rem;
+}
+
+.logo img{
+  width: 24%;
+    
+}
+.logo a{
+    color: #011801;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: #02431B;
+    text-decoration: none;
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    z-index: 1100;
+    align-items: center;
+}
+
+/* Garder l'input présent mais visuellement caché (doit rester cliquable via le label) */
+.menu-toggle{
+    /* Visually hidden but still focusable/interactive for the label */
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Bouton burger (positionné à droite) */
+.burger{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: .4rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    z-index: 1100;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.burger-line{
+    display: block;
+    height: .3rem;
+    background: #000;
+    border-radius: .2rem;
+}
+.nav-items li a{
+    text-decoration: none;
+    color: #02341B;
+    transition: color 0.3s ease;
+}
+.nav-items li a:hover{
+    color: #831622;
+}
+
+/* Animation du burger en X quand le menu est ouvert */
+#menu-toggle:checked~.burger .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(0.7rem, 0.7rem);
+}
+
+#menu-toggle:checked~.burger .burger-line:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked~.burger .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(0.7rem, -0.7rem);
+}
+
+/*le trait de separtion*/
+.separation-line {
+    display: block;
+    height: .3rem;
+    background: #02341B;
+    border-radius: .2rem;
+    width: 60%;
+    margin: 2rem auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+.footer {
+    background-color: rgb(2, 41, 2);
+    color: #ffffff;
+    margin-top: 5rem;
+    border-top: 1px solid #011801;
+    /* full-bleed footer across viewport */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    
+}
+
+.footer-top{ 
+    padding: 2rem 1.5rem;
+ }
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7rem;
+    max-width: 1100px;
+    margin: auto;
+   
+}
+
+/* Titres du footer */
+.footer-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    /* Gradient vert -> vert foncé pour une meilleure lisibilité sur fond vert */
+    background: linear-gradient(45deg, #6FCF6F 0%, #02431B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* Texte */
+.footer-section p {
+    font-size: 1.5rem;
+    color: #cbd5d1;
+    margin: 0.15rem 0 0.6rem 0;
+}
+
+/* Liens */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #D4EAC5;
+}
+
+/* Réseaux sociaux */
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-socials-list a,
+.footer-socials a {
+    font-size: 1.5rem;
+    color: #cbd5d1;
+    transition: 0.22s;
+    text-decoration: none;
+}
+
+.footer-socials-list a:hover,
+.footer-socials a:hover {
+    color: #D4EAC5; /* léger survol vert clair */
+    transform: translateY(-3px);
+}
+.footer-contact p a{
+    text-decoration: none;
+    color: #cbd5d1;
+}
+.footer-contact p a:hover{
+    color: #D4EAC5;
+    text-decoration: none;
+}
+
+/* Bas du footer */
+.footer-bottom{
+ background: #011801; 
+ padding: 1rem 0; 
+ margin-top: 1.2rem; 
+}
+.footer-bottom-inner{
+    max-width:1100px; 
+    margin:0 auto; 
+    text-align:center; 
+}
+.footer-bottom p { 
+    font-size:1.3rem; 
+    color:#64748b; 
+    margin:0; 
+}
+
+.footer-target{
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* Responsive footer columns */
+@media (max-width: 768px){
+    /* Layout: keep about full-width on top, then 3 centered columns (nav/contact/socials) on the next row */
+    .footer-container{
+        flex-direction: row; /* row with wrapping so we can force about to full-width */
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* About takes the entire first row and is centered */
+    .footer-about{ flex: 0 0 100%; text-align: center; }
+
+    /* The three other sections share the next row as centered columns */
+    .footer-nav, .footer-contact, .footer-socials{
+        flex: 0 1 30%;
+        min-width: 120px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ensure social links stack under the title and stay centered */
+    .footer-socials-list{ display:flex; flex-direction:column; gap:0.4rem;  }
+
+    .footer-top{ padding:1.2rem 1rem; }
+}
+
+/* =========================================
+   MENU MOBILE - OVERLAY PLEIN ÉCRAN (responsive)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Le <ul id="nav-menu"> devient un overlay plein écran décalé par défaut */
+    #nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #F5F1E6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        list-style: none;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 1200;
+    }
+
+    /* Lorsque la checkbox est cochée, faire apparaître l'overlay */
+    #menu-toggle:checked ~ #nav-menu {
+        transform: translateX(0);
+    }
+    
+    /* Afficher le bouton burger si besoin (il est déjà positionné à droite) */
+    .burger {
+        display: inline-flex;
+    }
+
+    .presentation img{
+    width: 100%;
+    height: 50vh;
+    opacity: 90%;
+    margin-top: 4rem;
+    
+}
+
+   /*le trait de separtion*/
+.separation-line {
+    display: block;
+    height: .2rem;
+    background: #02341B;
+    border-radius: .2rem;
+    width: 50%;
+    margin: 2rem auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+}
+

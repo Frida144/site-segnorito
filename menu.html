@@ -1,0 +1,567 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylemenu.css">
+</head>
+
+<body>
+
+    <!-- ======================================================
+        BARRE DE NAVIGATION FIXE EN HAUT DE LA PAGE
+    ====================================================== -->
+    <header class="navbar">
+        <nav class="header">
+            <!--Logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="photo du logo"> </a>
+            </div>
+            <!-- Checkbox caché pour gérer l'état du menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Bouton burger -->
+            <label for="menu-toggle" class="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </label>
+
+            <ul id="nav-menu" class="nav-items">
+               <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="epicerie.html">Epicérie fine</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="presentation">
+            <div class="presentation-bg"
+                style="background-image: url('images/Ai art Photos - Download Free High-Quality Pictures _ Freepik.jpg')">
+            </div>
+            <div class="presentation-overlay"></div>
+            <div class="presentation-content">
+                <h1>Notre menu</h1>
+                <div class="presentation-subtitle">
+                    <p class="presentation-text">Découvrez nos <strong> spécialités</strong> 🌮</p>
+                    <div class="presentation-buttons">
+                        
+                        <a href="#menu-tacos" class="btn-tacos">Tacos</a>
+                        <a href="#menu-burritos" class="btn-burritos">Burritos</a>
+                        <a href="#menu-nachos" class="btn-nachos">Nachos</a>
+                        <a href="#menu-autres" class="btn-autres">Autres</a>
+                        </div>
+                        <p class="presentation-text">Découvrez notre <strong> menu </strong></p>
+                        <a href="images/Menu_senorito.png" download class="btn-download-menu" title="Télécharger le menu (PNG)">
+                        Télécharger le menu
+                        <span class="download-icon" aria-hidden="true">⬇</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--le trait de séparation-->
+        <div class="separation">
+            <span class="separation-line"></span>
+        </div>
+
+        <section class="section-menu">
+            <div id="menu-tacos" class="menu-tacos">
+                <h2 class="menu-title">Tacos (Assiette de 3 )</h2>
+                <div class="menu-container">
+
+                    <div class="menu">
+
+                        <div class="menu-item">
+                            <span class="plat">🪇Crevettes</span>
+                            <span class="prix">7€</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span class="plat">🪇Boeuf</span>
+                            <span class="prix">7€</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span class="plat">🪇Végé</span>
+                            <span class="prix">7€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--le trait de séparation-->
+            <div class="separation">
+                <span class="separation-line"></span>
+            </div>
+            <div id="menu-burritos" class="menu-burritos">
+                <h2 class="menu-title">Burritos</h2>
+                <div class="menu-container">
+
+                    <div class="menu">
+
+                        <div class="menu-item">
+                            <span class="plat">🪇Poulet</span>
+                            <span class="prix">10€</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span class="plat">🪇Porc</span>
+                            <span class="prix">10€</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span class="plat">🪇Végé</span>
+                            <span class="prix">10€</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--le trait de séparation-->
+            <div class="separation">
+                <span class="separation-line"></span>
+            </div>
+
+            <div id="menu-nachos" class="menu-nachos">
+                <h2 class="menu-title">Nachos</h2>
+                <div class="menu-container">
+
+                    <div class="menu">
+
+                        <div class="menu-item">
+                            <span class="plat">🪇Guacamole</span>
+                            <span class="prix">6€</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <span class="plat">🪇Cheddar</span>
+                            <span class="prix">6€</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!--le trait de séparation-->
+            <div class="separation">
+                <span class="separation-line"></span>
+            </div>
+
+         <div id="menu-autres" class="menu-autres"> 
+                <h2 class="menu-title">Autres</h2>
+                <div class="menu-container-autres">
+                    <div class="menu-autres">
+                        <h4>Boissons</h4>
+                        <div class="menu-item-autres">
+                            <span class="plat-autres">🪇Sodas</span>
+                            <span class="prix-autres">2.50€</span>
+                        </div>
+                        <div class="menu-item-autres">
+                            <span class="plat-autres">🪇Eaux</span>
+                            <span class="prix-autres">1.50€</span>
+                        </div>
+                        <div class="menu-item-autres">
+                            <span class="plat-autres">🪇Jarritos</span>
+                            <span class="prix-autres">2.50€</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-container-autres">
+                    <div class="menu-autres">
+                        <h4>Accompagnements</h4>
+                        <div class="menu-item-autres">
+                            <span class="plat-autres">🪇Salade verte</span>
+                            <span class="prix-autres">2€</span>
+                        </div>
+                        <div class="menu-item-autres">
+                            <span class="plat-autres">🪇Haricots rouges</span>
+                            <span class="prix-autres">2€</span>
+                        </div>
+                        <div class="menu-item-autres">
+                            <span class="plat-autres">🪇Riz</span>
+                            <span class="prix-autres">2€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-container-autres">
+                    <div class="menu-autres">
+                        <h4>Desserts</h4>
+                        <div class="menu-item-autres">
+                            <span class="plat-autres">🪇Flan</span>
+                            <span class="prix-autres">3€</span>
+                        </div>
+                        <div class="menu-item-autres">
+                            <span class="plat-autres">🪇Gâteau mexicain aux 3 laits</span>
+                            <span class="prix-autres">3€</span>
+                        </div>
+                    
+                    </div>
+                </div>
+         </div>        
+        </section>
+<!--le trait de séparation-->
+            <div class="separation">
+                <span class="separation-line"></span>
+            </div>
+
+        <!-- Section Explication: 8 cartes plats avec carousel -->
+        <section class="explication-section">
+            <h2>🌮 Découvrez nos plats 🌮</h2>
+            <div class="explication-wrapper">
+                <button class="explication-arrow explication-prev" onclick="scrollExplication(-1)">❮</button>
+                <button class="explication-arrow explication-next" onclick="scrollExplication(1)">❯</button>
+                <div class="explication-track">
+                    <!-- Carte 1: Tacos Crevettes -->
+                    <div class="explication-card">
+                        <div class="card-photo">
+                            <img src="images/Tacos aux crevettes _ Bon pour toi.jpg" alt="Tacos Crevettes">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tacos Crevettes</h3>
+                            <p class="card-desc">Léger et parfumé, notre tacos aux crevettes associe des crevettes poêlées, légumes croquants et une sauce légèrement citronnée, 
+                                relevée d’épices mexicaines, le tout enveloppé dans une tortilla de maïs.</p>
+                            <div class="card-accordions">
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">📦 Ingrédients</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Tortilla de maîs, crevettes, tomate, poivrons, oignons, maïs, avocat, citron vert, épices mexicaines.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">⚠️ Allergènes</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Aucun allergène majeur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 2: Tacos Boeuf -->
+                    <div class="explication-card">
+                        <div class="card-photo">
+                            <img src="images/téléchargement (4).jpg" alt="Tacos Boeuf">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tacos Boeuf</h3>
+                            <p class="card-desc">Gourmand et généreux, notre tacos bœuf est garni de bœuf haché assaisonné aux épices mexicaines, accompagné de poivrons,
+                                 oignons fondants, fromage gratiné et sauce savoureuse, le tout dans une tortilla de maïs chaude.</p>
+                            <div class="card-accordions">
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">📦 Ingrédients</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Tortilla de maïs, bœuf haché, poivrons, oignons, fêta, salade, citron vert, tomate, épices mexicaines, sauce.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">⚠️ Allergènes</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Produits laitiers. Peut contenir des traces de fruits à coques.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 3: tacos végé -->
+                    <div class="explication-card">
+                        <div class="card-photo">
+                            <img src="images/myflavorfulrecipes.jpg" alt="tacos végé">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tacos Végé</h3>
+                            <p class="card-desc">Savoureux et coloré, notre tacos mexicain végétarien est garni de légumes grillés, haricots rouges épicés, maïs croquant et poivrons
+                                 fondants, le tout relevé par une sauce mexicaine légèrement épicée et du fromage fondant, enveloppé dans une tortilla de maïs chaude.</p>
+                            <div class="card-accordions">
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">📦 Ingrédients</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Tortilla de maïs, haricots rouges, poivrons, maïs, tomates, cheddar, chou, tofu, citron vert, épices mexicaines, sauce.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">⚠️ Allergènes</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Produits laitiers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 4: Burritos Poulet -->
+                    <div class="explication-card">
+                        <div class="card-photo">
+                            <img src="images/Burritos Poulet Chipotle Savoureux _ Recette Facile et Rapide.jpg" alt="Burritos Poulet">
+                        </div>
+                        <div class="card-content">
+                            <h3>Burrito Poulet</h3>
+                            <p class="card-desc">Savoureux et équilibré, notre burrito poulet est composé de poulet tendre mariné aux épices mexicaines, riz parfumé, haricots, légumes fondants et sauce onctueuse, roulé dans une grande tortilla de maïs.</p>
+                            <div class="card-accordions">
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">📦 Ingrédients</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Tortilla de maïs, poulet, riz, poivrons, oignons, salade, guacamole, sauce, épices mexicaines.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">⚠️ Allergènes</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Aucun allergène majeur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 5: Burritos porc -->
+                    <div class="explication-card">
+                        <div class="card-photo">
+                            <img src="images/Master The Art Of Cheeseburger Burritos_ A___.jpg" alt="Burritos porc">
+                        </div>
+                        <div class="card-content">
+                            <h3>Burrito Porc</h3>
+                            <p class="card-desc">Riche en saveurs, notre burrito porc mariné associe porc effiloché ou émincé, riz, haricots et légumes, relevés par une sauce mexicaine gourmande, le tout roulé dans une tortilla de maïs.</p>
+                            <div class="card-accordions">
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">📦 Ingrédients</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Tortilla de maïs, porc, haricots rouges, poivrons, oignons, cheddar, sauce, épices mexicaines.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">⚠️ Allergènes</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Produits laitiers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 6: Burritos Végé -->
+                    <div class="explication-card">
+                        <div class="card-photo">
+                            <img src="images/Ultimate Veggie Burrito Recipe - Easy & Delicious.jpg" alt="Burritos végé">
+                        </div>
+                        <div class="card-content">
+                            <h3>Burrito végé</h3>
+                            <p class="card-desc">Coloré et gourmand, notre burrito végétarien mêle légumes grillés, haricots rouges, maïs, riz et 
+                                sauce parfumée aux épices mexicaines, le tout roulé dans une tortilla de maïs.</p>
+                            <div class="card-accordions">
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">📦 Ingrédients</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Tortilla de maïs, riz, haricots rouges, maïs, poivrons, oignons, guacamole, salade, sauce, épices mexicaines.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">⚠️ Allergènes</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Aucun allergène majeur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 7: Nachos Guacamole -->
+                    <div class="explication-card">
+                        <div class="card-photo">
+                            <img src="images/Fresh Guacamole and Tortilla Chips.jpg" alt="Nachos Guacamole">
+                        </div>
+                        <div class="card-content">
+                            <h3>Nachos Guacamole</h3>
+                            <p class="card-desc">Croustillants et frais, nos nachos sont servis avec un guacamole maison onctueux à base d’avocat, relevé d’une touche de citron et d’épices.</p>
+                            <div class="card-accordions">
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">📦 Ingrédients</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Chips de maïs, avocat, citron, oignons, tomates, épices.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">⚠️ Allergènes</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Aucun allergène majeur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 8: Nachos cheddar -->
+                    <div class="explication-card">
+                        <div class="card-photo">
+                            <img src="images/cheese nachos.jpg" alt="Nachos cheddar">
+                        </div>
+                        <div class="card-content">
+                            <h3>Nachos Cheddar</h3>
+                            <p class="card-desc">Ultra gourmands, nos nachos croustillants sont nappés de cheddar fondant pour un plaisir simple et généreux à partager.</p>
+                            <div class="card-accordions">
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">📦 Ingrédients</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>Chips de maïs, cheddar.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-card">
+                                    <button class="accordion-btn-card" onclick="toggleAccordionCard(this)">
+                                        <span class="accordion-title">⚠️ Allergènes</span>
+                                        <span class="accordion-icon">+</span>
+                                    </button>
+                                    <div class="accordion-content-card">
+                                        <p>lait et produits laitiers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-section footer-about">
+                    <h3>Señorito</h3>
+                    <p>Food truck toulousain </p>
+                    <P>Cuisine mexicaine authentique, préparée sur <br>place avec des ingrédients frais.</P>
+                </div>
+
+                <div class="footer-section footer-nav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="epicerie.html">Epicérie fine</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section footer-contact">
+                    <h3>Contact</h3>
+                    <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
+                    <p>Email: <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a></p>
+                    <p>Localisation: Toulouse</p>
+                </div>
+
+                <div class="footer-section footer-socials">
+                    <h3>Suivez-nous</h3>
+                    <div class="footer-socials-list"
+                         <a href="https://www.instagram.com/senorito_food_truck/" target="_blank">Instagram</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <p>&copy; 2025 Señorito — Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script>
+
+function toggleAccordion(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.accordion-icon');
+    
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        icon.textContent = "−";
+    } else {
+        content.style.display = "none";
+        icon.textContent = "+";
+    }
+}
+
+function toggleAccordionCard(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.accordion-icon');
+    
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        icon.textContent = "−";
+    } else {
+        content.style.display = "none";
+        icon.textContent = "+";
+    }
+}
+
+function scrollExplication(direction) {
+    const track = document.querySelector('.explication-track');
+    const cardWidth = track.querySelector('.explication-card').offsetWidth;
+    const gap = 32; // 2rem = 32px gap
+    const scrollAmount = cardWidth + gap;
+    
+    track.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
+</script>
+</html>
