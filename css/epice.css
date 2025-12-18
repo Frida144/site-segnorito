@@ -1,98 +1,140 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* SECTION ÉPICES */
+.epice {
+    margin: 4rem 0;
+    padding: 0 2rem;
+}
 
-        /* SECTION ÉPICES */
-        .epice {
-            margin: 4rem 0;
-            padding: 0 2rem;
-        }
+.epice-contener {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
 
-        .epice-contener {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: stretch;
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.cummin, .paprika, .coriande {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+}
 
-        .cummin, .paprika, .coriande {
-            flex: 1;
-            max-width: 350px;
-        }
+.section-photo {
+    background: #02341BB2;
+    border-radius: 2rem;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
 
-        .section-photo {
-            background: #02341BB2;
-            border-radius: 2rem;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            overflow: hidden;
-        }
+/* Container pour l'image - CENTRAGE PARFAIT */
+.section-photo {
+    display: flex;
+    flex-direction: column;
+}
 
-        /* Container pour l'image */
-        .image-wrapper {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            overflow: hidden;
-        }
+.section-photo > img {
+    flex: 1;
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    padding: 2rem;
+    display: block;
+    margin: 0 auto;
+}
 
-        .section-photo img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            display: block;
-        }
+/* Texte en bas - TOUJOURS VISIBLE */
+.info {
+    background-color: #F5F1E6;
+    padding: 1.5rem;
+    border-radius: 0 0 2rem 2rem;
+    text-align: center;
+    margin-top: auto;
+}
 
-        /* Texte en bas */
-        .info {
-            background-color: #F5F1E6;
-            padding: 1.5rem;
-            border-radius: 0 0 2rem 2rem;
-            text-align: center;
-        }
+.info h3 {
+    color: #02341B;
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+}
 
-        .info h3 {
-            color: #02341B;
-            margin-bottom: 0.5rem;
-        }
+.info p {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
 
-        .info p {
-            color: #333;
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
+.price p {
+    color: #02341B;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
-        .price p {
-            color: #02341B;
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
+/* BOUTON "Click & collect" AVEC FOND VERT */
+.add-to-cart {
+    background-color: #02341BB2;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 0.5rem;
+}
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .epice-contener {
-                flex-direction: column;
-                align-items: center;
-            }
+.add-to-cart:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
-            .cummin, .paprika, .coriande {
-                width: 100%;
-                max-width: 300px;
-            }
+.add-to-cart:active {
+    transform: translateY(0);
+}
 
-            .section-photo {
-                height: 400px;
-            }
-        }
+/* Responsive */
+@media (max-width: 768px) {
+    .epice-contener {
+        flex-direction: column;
+        align-items: center;
+    }
 
-       
+    .cummin, .paprika, .coriande {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .section-photo {
+        min-height: 420px;
+    }
+
+    .section-photo > img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info h3 {
+        font-size: 1.6rem;
+    }
+
+    .add-to-cart {
+        font-size: 1.4rem;
+        padding: 0.9rem 1.5rem;
+    }
+}

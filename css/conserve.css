@@ -1,101 +1,139 @@
-       * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* SECTION CONSERVES */
-        .conserve, .conserve2 {
-            margin: 4rem 0;
-            padding: 0 2rem;
-        }
+/* SECTION CONSERVES */
+.conserve, .conserve2 {
+    margin: 4rem 0;
+    padding: 0 2rem;
+}
 
-        .conserve-contener, .conserve2-contener {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: stretch;
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.conserve-contener, .conserve2-contener {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
 
-        .nachos, .tradi, .mexico,
-        .pico, .salsa, .verte {
-            flex: 1;
-            max-width: 350px;
-        }
+.nachos, .tradi, .mexico,
+.pico, .salsa, .verte {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+}
 
-        .section-photo, .section2-photo {
-            background: #02341BB2;
-            border-radius: 2rem;
-            height: 350px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            overflow: hidden;
-        }
+.section-photo, .section2-photo {
+    background: #02341BB2;
+    border-radius: 2rem;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
 
-        /* Container pour l'image */
-        .image-wrapper {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            overflow: hidden;
-        }
+/* Images CENTRÉES et DIMENSIONNÉES */
+.section-photo > img,
+.section2-photo > img {
+    flex: 1;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    padding: 2rem;
+    display: block;
+    margin: 0 auto;
+}
 
-        .section-photo img,
-        .section2-photo img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            display: block;
-        }
+/* Texte en bas - TOUJOURS VISIBLE */
+.info, .info2 {
+    background-color: #F5F1E6;
+    padding: 1.5rem;
+    border-radius: 0 0 2rem 2rem;
+    text-align: center;
+    margin-top: auto;
+}
 
-        /* Texte en bas */
-        .info, .info2 {
-            background-color: #F5F1E6;
-            padding: 1.5rem;
-            border-radius: 0 0 2rem 2rem;
-            text-align: center;
-        }
+.info h3, .info2 h3 {
+    color: #02341B;
+    margin-bottom: 0.8rem;
+    font-size: 1.7rem;
+}
 
-        .info h3, .info2 h3 {
-            color: #02341B;
-            margin-bottom: 0.5rem;
-        }
+.info p, .info2 p {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
 
-        .info p, .info2 p {
-            color: #333;
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
+.price p, .price2 p {
+    color: #02341B;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
-        .price p, .price2 p {
-            color: #02341B;
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
+/* BOUTON "Click & collect" AVEC FOND VERT */
+.add-to-cart {
+    background-color: #02341BB2;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 0.5rem;
+}
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .conserve-contener,
-            .conserve2-contener {
-                flex-direction: column;
-                align-items: center;
-            }
+.add-to-cart:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
-            .nachos, .tradi, .mexico,
-            .pico, .salsa, .verte {
-                width: 100%;
-                max-width: 300px;
-            }
+.add-to-cart:active {
+    transform: translateY(0);
+}
 
-            .section-photo, .section2-photo {
-                height: 400px;
-            }
-        }
+/* Responsive */
+@media (max-width: 768px) {
+    .conserve-contener,
+    .conserve2-contener {
+        flex-direction: column;
+        align-items: center;
+    }
 
-       
+    .nachos, .tradi, .mexico,
+    .pico, .salsa, .verte {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .section-photo, .section2-photo {
+        min-height: 40px;
+    }
+
+    .section-photo > img,
+    .section2-photo > img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info h3, .info2 h3 {
+        font-size: 1.5rem;
+    }
+
+    .add-to-cart {
+        font-size: 1.4rem;
+        padding: 0.9rem 1.5rem;
+    }
+}
