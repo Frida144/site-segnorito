@@ -1,157 +1,101 @@
-.conserve{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-}
-.conserve-contener{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    
-}
-.section-photo{
-    background: #02341BB2;
-    border-radius: 3.5rem;
-    width: 70%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3rem;
-  
-    
-   
-}
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.section-photo img{
-    width: 200%;
-    height: 40vh;
-    margin-left: 4rem;
-    
-}
-.tradi img,
-.mexico img{
-    margin-top: 2rem;
-    
-}
+        /* SECTION CONSERVES */
+        .conserve, .conserve2 {
+            margin: 4rem 0;
+            padding: 0 2rem;
+        }
 
-@media (max-width: 768px){
-    .conserve-contener{
-        flex-direction: column;
-        gap: 7rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .section-photo{
-        width: 70%;
-        align-items: center;
-        justify-content: center;
-    }
-    .info{
-        margin-right: 7rem;
-    }
-}
-.info{
-    display: flex;
-   flex-direction: column;
-   margin-right: 4rem;
-   
-   height: auto;
-   align-items: center;
-}
+        .conserve-contener, .conserve2-contener {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-.info p{
-    color: black;
-    font-size: 1.7rem;
-    
-}
-.price p{
-    text-align: end;
-    
-}
+        .nachos, .tradi, .mexico,
+        .pico, .salsa, .verte {
+            flex: 1;
+            max-width: 350px;
+        }
 
-/*section 2*/
+        .section-photo, .section2-photo {
+            background: #02341BB2;
+            border-radius: 2rem;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
 
-.conserve2{
-    margin-top: 7rem;
-    margin-bottom: 4rem;
-}
-.conserve2-contener{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    
-}
-.section2-photo{
-    background: #02341BB2;
-    border-radius: 3.5rem;
-    width: 75%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3rem;
-  
-    
-   
-}
+        /* Container pour l'image */
+        .image-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            overflow: hidden;
+        }
 
-.section2-photo img{
-    width: 200%;
-    height: 40vh;
-    margin-left: 4rem;
-    
-}
-.pico img,
-.salsa img,
-.verte img{
-    margin-top: 1rem;
-    
-}
+        .section-photo img,
+        .section2-photo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
 
-@media (max-width: 768px){
-    .conserve2-contener{
-        flex-direction: column;
-        gap: 7rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .section2-photo{
-        width: 70%;
-        align-items: center;
-        justify-content: center;
-    }
-    .info2{
-        margin-right: 7rem;
-    }
-}
-.info2{
-    display: flex;
-   flex-direction: column;
-   margin-right: 4rem;
-   
-   height: auto;
-   align-items: center;
-}
+        /* Texte en bas */
+        .info, .info2 {
+            background-color: #F5F1E6;
+            padding: 1.5rem;
+            border-radius: 0 0 2rem 2rem;
+            text-align: center;
+        }
 
-.info2 p{
-    color: black;
-    font-size: 1.7rem;
-    
-}
-.price2 p{
-    text-align: end;
-    
-}
-.price p{
-    text-align: center;
-    
-}
-.info h3 ,
-.info2 h3{
-    color: black;
-    text-align: center;
-}
+        .info h3, .info2 h3 {
+            color: #02341B;
+            margin-bottom: 0.5rem;
+        }
+
+        .info p, .info2 p {
+            color: #333;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .price p, .price2 p {
+            color: #02341B;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .conserve-contener,
+            .conserve2-contener {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nachos, .tradi, .mexico,
+            .pico, .salsa, .verte {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .section-photo, .section2-photo {
+                height: 400px;
+            }
+        }
+
+       

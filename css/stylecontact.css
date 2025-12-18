@@ -105,7 +105,7 @@ html{
     flex-direction: column;
     color: #02341B;
     font-size: 1.6rem;
-    justify-content: space-around;
+    
    
     
     
@@ -159,5 +159,14 @@ html{
     margin-left: auto;
     width: 50%;
    }
+.contact-group{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    height: 10vh;
+    
+}
+
+
     }
 
