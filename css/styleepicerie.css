@@ -1,195 +1,235 @@
-﻿*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
-}
+﻿      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.nav{
-   margin-bottom: -2rem;
-    margin-top: 5rem;
-   
-}
-.nav-img img{
-    width: 4.2rem; /* icon size */
-    height: auto;
-    display: block;
-}
+        html {
+            font-size: 62.5%;
+        }
 
-.nav-container{
-    display: flex;
-    align-items: center;
-    justify-content: center; /* center the three items */
-    gap: 1.2rem; /* reduce space between items */
-    margin-top: 2rem;
-    background-color: transparent;
-    width: 100%;
-    z-index: 1000;
-    font-size: 1.7rem;
-    background: rgb(248, 240, 223)
-}
+        /* Section navigation épicerie */
+        .nav {
+            margin-bottom: -2rem;
+            margin-top: 5rem;
+        }
 
-.nav .titre h3{
-    margin: 0;
-    font-size: 2rem;
-    color: #02341B;
-}
-.titre a{
-    text-decoration: none;
-   
-}
- .titre h3{
-    text-decoration: none;
-    color: #02341B;
-}
+        .nav-img img {
+            width: 4.2rem;
+            height: auto;
+            display: block;
+        }
 
-/*section menu de l'epicerie fine*/
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 2rem;
+            width: 100%;
+            font-size: 1.7rem;
+            background: rgb(248, 240, 223);
+            padding: 1rem;
+        }
 
-.menu-container{
-   display: flex;
-    align-items: center;
-    justify-content: center; 
-    gap: 3rem; 
-    margin-top: 2rem;
-    background-color: transparent;
-    width: 100%;
-    z-index: 1000;
-    font-size: 1.7rem;
-    background: #CE1126; 
-    height: 5rem;
-    margin-bottom: -1rem;
-}
+        .nav .titre h3 {
+            margin: 0;
+            font-size: 2rem;
+            color: #02341B;
+        }
 
-/* Menu items style */
-.menu-item a{
-    display: inline-block;
-    padding: 0.6rem 1rem;
-    color: #02341B;
-    text-decoration: none;
-    background: transparent;
-    border-radius: 0.6rem;
-    transition: background 0.2s ease, transform 0.12s ease;
-    font-weight: 700;
-}
-.menu-item a:hover{
-    background: rgba(255,255,255,0.08);
-    transform: translateY(-2px);
-    color: white;
-}
+        .titre a {
+            text-decoration: none;
+            color: #02341B;
+        }
 
-/* Menu icon (arrow) */
-.menu-icon .menu-icon-link{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 3.6rem;
-    height: 3.6rem;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.12);
-    color: #02341B;
-    text-decoration: none;
-    font-size: 1.6rem;
-    transition: transform 0.18s ease, background 0.18s ease;
-}
-.menu-icon .menu-icon-link:hover{
-    background: rgba(255,255,255,0.18);
-    transform: rotate(180deg) translateY(-3px);
-    color: white;
-}
-.menu-icon .arrow{ display:block; }
-/* Rotate arrow by default to change its direction */
-.menu-icon .arrow{ transform: rotate(180deg); display:block; }
-@media (max-width:768px){
-  .menu-container{
-    gap: 0;
-    height: 6rem;
-}
-}
+        /* Menu épicerie */
+        .menu-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            width: 100%;
+            font-size: 1.7rem;
+            background: #CE1126;
+            height: 5rem;
+            margin-bottom: 2rem;
+        }
 
-/*photo du food truck*/
-.photo img{
-   height: 40rem;
-    width: 100%; 
-    opacity: 90%;
-}
-.text{
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
+        .menu-item a {
+            display: inline-block;
+            padding: 0.6rem 1rem;
+            color: #02341B;
+            text-decoration: none;
+            background: transparent;
+            border-radius: 0.6rem;
+            transition: background 0.2s ease, transform 0.12s ease;
+            font-weight: 700;
+        }
 
-/*--------------------------
-section storie
-----------------------*/
-.storie{
-    margin-top: 1rem;
-}
-.container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-.a-propos{
-    background: #02341BB2;
-    display: flex;
-    flex-flow: row wrap ;
-    width: 40%;
-    height: auto;
-    margin-left: 4rem;
-    text-align: center;
-    justify-content: center;
-    
-}
-.a-propos h2,
-.histoire h2{
-    color: white;
-    margin-top: 2rem;
+        .menu-item a:hover {
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-2px);
+            color: white;
+        }
 
-}
-.storie-text{
-    color: rgb(242, 232, 214);
-    text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+        .menu-icon .menu-icon-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.6rem;
+            height: 3.6rem;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.12);
+            color: #02341B;
+            text-decoration: none;
+            font-size: 1.6rem;
+            transition: transform 0.18s ease, background 0.18s ease;
+        }
 
-}
-.storie-text p strong{
-    color: white;
-}
-.a-propos-photo,
-.histoire-photo{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 4rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.photo1 img,
-.photo2 img{
-    width: 100%;
-    height: 50vh;
-}
-.histoire{
-  background: #02341BB2;
-    display: flex;
-    flex-flow: row wrap ;
-    width: 40%;
-    height: auto;
-    margin-left: 4rem;
-    text-align: center;
-    justify-content: center;  
-}
-.histoire h2{
-    color: white;
-    margin-top: 2rem;
+        .menu-icon .menu-icon-link:hover {
+            background: rgba(255,255,255,0.18);
+            transform: rotate(180deg) translateY(-3px);
+            color: white;
+        }
 
-}
-.photo3 img,
-.photo4 img{
-    width: 100%;
-    height: 40vh;
-}
+        .menu-icon .arrow {
+            transform: rotate(180deg);
+            display: block;
+        }
 
+        /* Photo food truck */
+        .photo {
+            margin-bottom: 1rem;
+            margin-top: -2rem;
+        }
+
+        .food img {
+            height: 45rem;
+            width: 100%;
+            object-fit: cover;
+            opacity: 90%;
+        }
+
+        .text {
+            text-align: center;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            font-size: 1.6rem;
+            color: #333;
+            max-width: 800px;
+        }
+
+        /* Section histoires */
+        .storie {
+            margin: 4rem 0;
+            padding: 0 2rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .a-propos,
+        .histoire {
+            background: #02341BB2;
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            border-radius: 2rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .a-propos h2,
+        .histoire h2 {
+            color: white;
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .storie-text {
+            color: rgb(242, 232, 214);
+            text-align: justify;
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .storie-text p strong {
+            color: white;
+        }
+
+        .a-propos-photo,
+        .histoire-photo {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .photo1, .photo2, .photo3, .photo4 {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+
+        .photo1 img,
+        .photo2 img,
+        .photo3 img,
+        .photo4 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            html {
+                font-size: 55%;
+            }
+
+            .menu-container {
+                gap: 1rem;
+                height: auto;
+                padding: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .food img {
+                height: 30rem;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .a-propos,
+            .histoire {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .a-propos-photo,
+            .histoire-photo {
+                grid-template-columns: 1fr;
+            }
+
+            .photo1, .photo2, .photo3, .photo4 {
+                height: 200px;
+            }
+        }
+
+       
