@@ -1,170 +1,193 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kit découverte</title>
-    <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styleepicerie.css">
-    <link rel="stylesheet" href="css/kitdecouverte.css">
-</head>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleepicerie.css" />
+    <link rel="stylesheet" href="css/kitdecouverte.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- ======================================================
         BARRE DE NAVIGATION FIXE EN HAUT DE LA PAGE
     ====================================================== -->
     <header class="navbar">
-        <nav class="header">
-            <!--Logo-->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="photo du logo"> </a>
-            </div>
-            <!-- Checkbox caché pour gérer l'état du menu -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <nav class="header">
+        <!--Logo-->
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="photo du logo" />
+          </a>
+        </div>
+        <!-- Checkbox caché pour gérer l'état du menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-            <!-- Bouton burger -->
-            <label for="menu-toggle" class="burger">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </label>
+        <!-- Bouton burger -->
+        <label for="menu-toggle" class="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </label>
 
-            <ul id="nav-menu" class="nav-items">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="epicerie.html">Epicérie fine</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-            </ul>
-        </nav>
+        <ul id="nav-menu" class="nav-items">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="epicerie.html">Epicérie fine</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+          <li>
+            <a href="panier.html">Panier (<span id="cart-count">0</span>)</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="nav">
-            <div class="nav-container">
-                <div class="nav-img">
-                    <img src="images/Buriri1.png" alt="photo du logo">
-                </div>
-                <div class="titre">
-                    <a href="epicerie.html">
-                        <h3>L'épicerie fine de Señoritos</h3>
-                    </a>
-                </div>
-                <div class="nav-img">
-                    <img src="images/Buriri1.png" alt="photo du logo">
-                </div>
-            </div>
-        </section>
-        <section class="menu">
-            <div class="menu-container">
-                <div class="menu-icon">
-                    <a href="epicerie.html" class="menu-icon-link" aria-label="Aller à l'épicerie">
-                        <span class="arrow">➜</span>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="epice.html">
-                        <p>Epices</p>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="conserve.html">
-                        <p>Conserves</p>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="farine.html">
-                        <p>Farines</p>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="kitdecouverte.html">
-                        <p>Kit</p>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="piment.html">
-                        <p>Piments</p>
-                    </a>
-                </div>
-            </div>
-        </section>
+      <section class="nav">
+        <div class="nav-container">
+          <div class="nav-img">
+            <img src="images/Buriri1.png" alt="photo du logo" />
+          </div>
+          <div class="titre">
+            <a href="epicerie.html">
+              <h3>L'épicerie fine de Señoritos</h3>
+            </a>
+          </div>
+          <div class="nav-img">
+            <img src="images/Buriri1.png" alt="photo du logo" />
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <div class="menu-container">
+          <div class="menu-icon">
+            <a
+              href="epicerie.html"
+              class="menu-icon-link"
+              aria-label="Aller à l'épicerie"
+            >
+              <span class="arrow">➜</span>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="epice.html">
+              <p>Epices</p>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="conserve.html">
+              <p>Conserves</p>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="farine.html">
+              <p>Farines</p>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="kitdecouverte.html">
+              <p>Kit découverte</p>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="piment.html">
+              <p>Piments</p>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <section class="decouverte">
-            <div class="container">
-                <div class="produit">
-                    <div class="image">
-                    <img src="images/boite kit découverte.png" alt="boite du kit decouverte">
-                   </div>
-                    
-                </div>
-
-                <div class="description">
-                    <h3>Description du contenu du Kit Découverte du Mexique </h3>
-                    <div class="description-text">
-                        
-                            <p>🪇 10 tortillas aux maïs</p>
-                            <p>🪇 1 sauce tomate</p>
-                            <p>🪇 1 crème de piment</p>
-                            <p>🪇 1 sachet d’haricot</p>
-                            <p>🪇 1 recette mexicaine au choix</p>
-                            <p>🪇 1 nappe mexicaine</p>
-                        
-                    </div>
-                    <div class="produit-text">
-                        <h3>Kit découvert du Mexique</h3>
-                        <p>Poids net : 1.800g</p>
-                        <p><strong>15€</strong></p>
-                    </div>
-                </div>
+      <section class="decouverte">
+        <div class="container">
+          <div class="produit">
+            <div class="image">
+              <img
+                src="images/boite kit découverte.png"
+                alt="boite du kit decouverte"
+              />
             </div>
-        </section>
+          </div>
+
+          <div class="description">
+            <h3>Description du contenu du Kit Découverte du Mexique :</h3>
+            <div class="description-text">
+              <p>🪇 10 tortillas aux maïs</p>
+              <p>🪇 1 sauce tomate</p>
+              <p>🪇 1 sachet d’haricot</p>
+              <p>🪇 1 recette</p>
+              <p>🪇 1 nappe mexicaine</p>
+            </div>
+            <div class="produit-text">
+              <h3>Kit découvert du Mexique</h3>
+              <p>Poids net : 1.800g</p>
+              <p><strong>15€</strong></p>
+              <button
+                class="add-to-cart"
+                data-id="kit-decouverte"
+                data-name="Kit découverte du Mexique"
+                data-price="15.00"
+                data-image="images/boite kit découverte.png"
+              >
+                Ajouter au panier
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="js/cart.js"></script>
     </main>
 
     <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-container">
-                <div class="footer-section footer-about">
-                    <h3>Señorito</h3>
-                    <p>Food truck toulousain </p>
-                    <P>Cuisine mexicaine authentique, préparée sur <br>place avec des ingrédients frais.</P>
-                </div>
+      <div class="footer-top">
+        <div class="footer-container">
+          <div class="footer-section footer-about">
+            <h3>Señorito</h3>
+            <p>Food truck toulousain</p>
+            <p>
+              Cuisine mexicaine authentique, préparée sur <br />place avec des
+              ingrédients frais.
+            </p>
+          </div>
 
-                <div class="footer-section footer-nav">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="epicerie.html">Epicérie fine</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
-                    </ul>
-                </div>
+          <div class="footer-section footer-nav">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="epicerie.html">Epicérie fine</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-section footer-contact">
-                    <h3>Contact</h3>
-                    <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
-                    <p>Email: <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a></p>
-                    <p>Localisation: Toulouse</p>
-                </div>
+          <div class="footer-section footer-contact">
+            <h3>Contact</h3>
+            <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
+            <p>
+              Email:
+              <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a>
+            </p>
+            <p>Localisation: Toulouse</p>
+          </div>
 
-                <div class="footer-section footer-socials">
-                    <h3>Suivez-nous</h3>
-                    <div class="footer-socials-list">
-                        <a href="https://www.instagram.com/senorito_food_truck/" target="_blank">Instagram</a>
-
-                    </div>
-                </div>
+          <div class="footer-section footer-socials">
+            <h3>Suivez-nous</h3>
+            <div class="footer-socials-list">
+              <a
+                href="https://www.instagram.com/senorito_food_truck/"
+                target="_blank"
+                >Instagram</a
+              >
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-            <div class="footer-bottom-inner">
-                <p>&copy; 2025 Señorito — Tous droits réservés.</p>
-            </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2025 Señorito — Tous droits réservés.</p>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

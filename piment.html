@@ -1,151 +1,209 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piments</title>
-   <link rel="stylesheet" href="css/piment.css">
-   <link rel="stylesheet" href="css/styleepicerie.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="icon" href="images/logo.png">
-</head>
-<body>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleepicerie.css" />
+    <link rel="stylesheet" href="css/piment.css" />
+  </head>
+  <body>
+    <!-- ======================================================
+        BARRE DE NAVIGATION FIXE EN HAUT DE LA PAGE
+    ====================================================== -->
     <header class="navbar">
-        <nav class="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="photo du logo">
-                </a>
-            </div>
-            <ul class="nav-items">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="epicerie.html">Epicérie fine</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header> 
+      <nav class="header">
+        <!--Logo-->
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="photo du logo" />
+          </a>
+        </div>
+        <!-- Checkbox caché pour gérer l'état du menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
+        <!-- Bouton burger -->
+        <label for="menu-toggle" class="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </label>
+
+        <ul id="nav-menu" class="nav-items">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="epicerie.html">Epicérie fine</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+          <li>
+            <a href="panier.html">Panier (<span id="cart-count">0</span>)</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-        <section class="nav">
-            <div class="nav-container">
-                <div class="nav-img">
-                    <img src="images/Buriri1.png" alt="photo du logo">
-                </div> 
-                <div class="titre">
-                    <a href="epicerie.html"><h3>L'épicerie fine de Señoritos</h3></a>
-                </div>
-                <div class="nav-img">
-                    <img src="images/Buriri1.png" alt="photo du logo">
-                </div>
-            </div>
-        </section>
+      <section class="nav">
+        <div class="nav-container">
+          <div class="nav-img">
+            <img src="images/Buriri1.png" alt="photo du logo" />
+          </div>
+          <div class="titre">
+            <a href="epicerie.html"><h3>L'épicerie fine de Señoritos</h3></a>
+          </div>
+          <div class="nav-img">
+            <img src="images/Buriri1.png" alt="photo du logo" />
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <div class="menu-container">
+          <div class="menu-icon">
+            <a
+              href="epicerie.html"
+              class="menu-icon-link"
+              aria-label="Aller à l'épicerie"
+            >
+              <span class="arrow">➜</span>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="epice.html"><p>Epices</p></a>
+          </div>
+          <div class="menu-item">
+            <a href="conserve.html"><p>Conserves</p></a>
+          </div>
+          <div class="menu-item">
+            <a href="farine.html"><p>Farines</p></a>
+          </div>
+          <div class="menu-item">
+            <a href="kitdecouverte.html"><p>Kit découverte</p></a>
+          </div>
+          <div class="menu-item">
+            <a href="piment.html"><p>Piments</p></a>
+          </div>
+        </div>
+      </section>
 
-        <section class="menu">
-            <div class="menu-container">
-                <div class="menu-icon">
-                <a href="epicerie.html" class="menu-icon-link" aria-label="Aller à l'épicerie">
-                    <span class="arrow">➜</span>
-                </a>
+      <!-- section de présentation des piments-->
+      <section class="presentation">
+        <div class="content">
+          <div class="Piment-en-poudre-doux">
+            <div class="container">
+              <img src="images/piment dodo.png" alt=" Piment en poudre doux " />
             </div>
-                <div class="menu-item"><a href="epice.html"><p>Epices</p></a></div>
-                <div class="menu-item"><a href="conserve.html"><p>Conserves</p></a></div>
-                <div class="menu-item"><a href="farine.html"><p>Farines</p></a></div>
-                <div class="menu-item"><a href="kitdecouverte.html"><p>Kit</p></a></div>
-                <div class="menu-item"><a href="piment.html"><p>Piments</p></a></div>
+            <div class="text">
+              <h3>Piment en poudre doux</h3>
+              <p>Poids net : 800g</p>
+              <p><strong>2,80€</strong></p>
+              <button
+                class="add-to-cart"
+                data-id="piment-doux"
+                data-name="Piment en poudre doux"
+                data-price="2.80"
+                data-image="images/piment dodo.png"
+              >
+                Ajouter au panier
+              </button>
             </div>
-        </section>
+          </div>
 
-        <section class="presentation">
-            <div class="content">
-                <!-- Piment en poudre doux -->
-                <div class="Piment-en-poudre-doux">
-                    <div class="container">
-                        <div class="image-wrapper">
-                            <img src="images/piment dodo.png" alt="Piment en poudre doux">
-                        </div>
-                    </div>
-                        <div class="text">
-                            <h3>Piment en poudre doux</h3>
-                            <p>Poids net : 800g</p>
-                            <p><strong>2,80€</strong></p>
-                        </div>
-                    
-                </div>
-
-                <!-- Piment Mexico en poudre -->
-                <div class="Piment-mexico-en-poudre">
-                    <div class="container">
-                        <div class="image-wrapper">
-                            <img src="images/fort.png" alt="Piment Mexico en poudre">
-                        </div>
-                    </div>
-                        <div class="text">
-                            <h3>Piment Mexico en poudre</h3>
-                            <p>Poids net : 800g</p>
-                            <p><strong>3€</strong></p>
-                        </div>
-                    
-                </div>
-
-                <!-- Piment fort Jalapa en poudre -->
-                <div class="Piment-fort-jalapa-en-poudre">
-                    <div class="container">
-                        <div class="image-wrapper">
-                            <img src="images/fort fort.png" alt="Piment fort Jalapa en poudre">
-                        </div>
-                    </div>
-                        <div class="text">
-                            <h3>Piment fort Jalapa en poudre</h3>
-                            <p>Poids net : 800g</p>
-                            <p><strong>3,10€</strong></p>
-                        </div>
-                    
-                </div>
+          <div class="Piment-mexico-en-poudre">
+            <div class="container">
+              <img src="images/fort.png" alt=" Piment Mexico en poudre " />
             </div>
-        </section>
+            <div class="text">
+              <h3>Piment Mexico en poudre</h3>
+              <p>Poids net : 800g</p>
+              <p><strong>3€</strong></p>
+              <button
+                class="add-to-cart"
+                data-id="piment-mexico"
+                data-name="Piment Mexico en poudre"
+                data-price="3.00"
+                data-image="images/fort.png"
+              >
+                Ajouter au panier
+              </button>
+            </div>
+          </div>
+          <div class="Piment-fort-jalapa-en-poudre">
+            <div class="container">
+              <img
+                src="images/fort fort.png"
+                alt="Piment fort Jalapa en poudre  "
+              />
+            </div>
+            <div class="text">
+              <h3>Piment fort Jalapa en poudre</h3>
+              <p>Poids net : 800g</p>
+              <p><strong>3,10€</strong></p>
+              <button
+                class="add-to-cart"
+                data-id="piment-jalapa"
+                data-name="Piment fort Jalapa en poudre"
+                data-price="3.10"
+                data-image="images/fort fort.png"
+              >
+                Ajouter au panier
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-container">
-                <div class="footer-section footer-about">
-                    <h3>Señorito</h3>
-                    <p>Food truck toulousain</p>
-                    <p>Cuisine mexicaine authentique, préparée sur place avec des ingrédients frais.</p>
-                </div>
+      <div class="footer-top">
+        <div class="footer-container">
+          <div class="footer-section footer-about">
+            <h3>Señorito</h3>
+            <p>Food truck toulousain</p>
+            <p>
+              Cuisine mexicaine authentique, préparée sur <br />place avec des
+              ingrédients frais.
+            </p>
+          </div>
 
-                <div class="footer-section footer-nav">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="epicerie.html">Epicérie fine</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
-                    </ul>
-                </div>
+          <div class="footer-section footer-nav">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="epicerie.html">Epicérie fine</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-section footer-contact">
-                    <h3>Contact</h3>
-                    <p>Téléphone: <a href="tel:+33623946712">06 23 94 67 12</a></p>
-                    <p>Email: <a href="mailto:contact@señorito.fr">contact@señorito.fr</a></p>
-                    <p>Localisation: Toulouse</p>
-                </div>
+          <div class="footer-section footer-contact">
+            <h3>Contact</h3>
+            <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
+            <p>
+              Email:
+              <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a>
+            </p>
+            <p>Localisation: Toulouse</p>
+          </div>
 
-                <div class="footer-section footer-socials">
-                    <h3>Suivez-nous</h3>
-                    <div class="footer-socials-list">
-                        <a href="https://www.instagram.com/senorito_food_truck/" target="_blank">Instagram</a>
-                    </div>
-                </div>
+          <div class="footer-section footer-socials">
+            <h3>Suivez-nous</h3>
+            <div class="footer-socials-list">
+              <a
+                href="https://www.instagram.com/senorito_food_truck/"
+                target="_blank"
+                >Instagram</a
+              >
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-            <div class="footer-bottom-inner">
-                <p>&copy; 2025 Señorito — Tous droits réservés.</p>
-            </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2025 Señorito — Tous droits réservés.</p>
         </div>
+      </div>
     </footer>
-</body>
+    <script src="js/cart.js"></script>
+  </body>
 </html>

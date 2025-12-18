@@ -1,179 +1,237 @@
 ﻿<!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
-    <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stylecontact.css">
-     <!--lien pour recevoir les messages dans ma boite mail-->
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylecontact.css" />
+    <!--lien pour recevoir les messages dans ma boite mail-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-        emailjs.init("g3PPiT9M6eSOc3HMn");
+      emailjs.init("g3PPiT9M6eSOc3HMn");
     </script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-</head>
-<body>
-  
+  </head>
+  <body>
     <!-- ======================================================
         BARRE DE NAVIGATION FIXE EN HAUT DE LA PAGE
     ====================================================== -->
     <header class="navbar">
-        <nav class="header">
-            <!--Logo-->
-             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="photo du logo"> </a>
-            </div>
-            <!-- Checkbox caché pour gérer l'état du menu -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <nav class="header">
+        <!--Logo-->
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="photo du logo" />
+          </a>
+        </div>
+        <!-- Checkbox caché pour gérer l'état du menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-            <!-- Bouton burger -->
-            <label for="menu-toggle" class="burger">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </label>
+        <!-- Bouton burger -->
+        <label for="menu-toggle" class="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </label>
 
-            <ul id="nav-menu" class="nav-items">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="epicerie.html">Epicérie fine</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>  
+        <ul id="nav-menu" class="nav-items">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="epicerie.html">Epicérie fine</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+          <li>
+            <a href="panier.html">Panier (<span id="cart-count">0</span>)</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-        <Section class="card">
-           <div class="card-container">
-            <h1> Contactez-nous</h1>
-            <div class="card-group">
-                <div class="card-contact">
-                    <h3>Contacts</h3>
-                    <div class="card-item">
-                        <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
-                    <p>Email: <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a></p>
-                    </div>
-                </div>
-                    <div class="card-social">
-                        <h3>Réseaux sociaux</h3>
-                        <div class="card-item">
-                            <p><a href="https://www.instagram.com/senorito_food_truck/" target="_blank">Instagram</a></p>
-                            
-                        </div>
-                    
-                </div>
+      <section class="card">
+        <div class="card-container">
+          <h1>Contactez-nous</h1>
+          <div class="card-group">
+            <div class="card-contact">
+              <h3>Contacts</h3>
+              <div class="card-item">
+                <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
+                <p>
+                  Email:
+                  <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a>
+                </p>
+              </div>
             </div>
-           </div>
-        </Section>
-
-        
-        <section class="contact">
-             <div class="contact-content">
-                <p>Vous avez des questions, des suggestions ou vous souhaitez simplement nous dire bonjour ? N'hésitez pas à nous contacter via le formulaire ci-dessous. Nous sommes impatients de vous lire et de vous aider !</p>
+            <div class="card-social">
+              <h3>Réseaux sociaux</h3>
+              <div class="card-item">
+                <p>
+                  <a
+                    href="https://www.instagram.com/senorito_food_truck/"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </p>
+              </div>
             </div>
-                <div class="contact-form">
-                        <h1>Formulaire</h1>
-            
-    <form action="#" id="contact-container" class="contact-container">
-        
-        <div class="contact-group">
-            <label for="nom">Nom* </label>
-            <input type="text" id="nom" name="nom" required placeholder="Votre Nom...">
+          </div>
         </div>
+      </section>
 
-        <div class="contact-group">
-            <label for="prenom">Prénom* </label>
-            <input type="text" id="prenom" name="prenom" required placeholder="Votre Prénom...">
+      <section class="contact">
+        <div class="contact-content">
+          <p>
+            Vous avez des questions, des suggestions ou vous souhaitez
+            simplement nous dire bonjour ? N'hésitez pas à nous contacter via le
+            formulaire ci-dessous. Nous sommes impatients de vous lire et de
+            vous aider !
+          </p>
         </div>
+        <div class="contact-form">
+          <h1>Formulaire</h1>
 
-        <div class="contact-group">
-            <label for="number">Télephone* </label>
-            <input type="tel" id="number" name="number" required placeholder="06 00 00 00 00">
+          <form action="#" id="contact-container" class="contact-container">
+            <div class="contact-group">
+              <label for="nom">Nom :</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                required
+                placeholder="Votre Nom..."
+              />
+            </div>
+
+            <div class="contact-group">
+              <label for="prenom">Prénom :</label>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                required
+                placeholder="Votre Prénom..."
+              />
+            </div>
+
+            <div class="contact-group">
+              <label for="number">Télephone :</label>
+              <input
+                type="tel"
+                id="number"
+                name="number"
+                placeholder="06 00 00 00 00"
+              />
+            </div>
+
+            <div class="contact-group">
+              <label for="email">Email :</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nom.prenom@exemple.com"
+              />
+            </div>
+
+            <div class="contact-group">
+              <label for="allergene">Allergène :</label>
+              <input
+                type="text"
+                id="allergene"
+                name="allergene"
+                placeholder="Indiquez vos allergènes..."
+              />
+            </div>
+
+            <div class="contact-group">
+              <label for="message">Message :</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Votre message..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn">Envoyer</button>
+          </form>
         </div>
-
-        <div class="contact-group">
-            <label for="email">Email </label>
-            <input type="email" id="email" name="email" placeholder="nom.prenom@exemple.com">
-        </div>
-
-        <div class="contact-group">
-            <label for="allergene">Allergène </label>
-            <input type="text" id="allergene" name="allergene" placeholder="Indiquez vos allergènes...">
-        </div>
-
-        <div class="contact-group">
-            <label for="message">Message* </label>
-            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
-        </div>
-
-        <button type="submit" class="btn">Envoyer</button>
-  
- </form>
-                </div>
-        
-    </section>
+      </section>
     </main>
-   <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-container">
-                <div class="footer-section footer-about">
-                    <h3>Señorito</h3>
-                    <p>Food truck toulousain </p>
-                        <P>Cuisine mexicaine authentique, préparée sur <br>place avec des ingrédients frais.</P>
-                </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-container">
+          <div class="footer-section footer-about">
+            <h3>Señorito</h3>
+            <p>Food truck toulousain</p>
+            <p>
+              Cuisine mexicaine authentique, préparée sur <br />place avec des
+              ingrédients frais.
+            </p>
+          </div>
 
-                <div class="footer-section footer-nav">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="epicerie.html">Epicérie fine</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                    </ul>
-                </div>
+          <div class="footer-section footer-nav">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="epicerie.html">Epicérie fine</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-section footer-contact">
-                    <h3>Contact</h3>
-                    <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
-                    <p>Email: <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a></p>
-                    <p>Localisation: Toulouse</p>
-                </div>
+          <div class="footer-section footer-contact">
+            <h3>Contact</h3>
+            <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
+            <p>
+              Email:
+              <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a>
+            </p>
+            <p>Localisation: Toulouse</p>
+          </div>
 
-                <div class="footer-section footer-socials">
-                    <h3>Suivez-nous</h3>
-                    <div class="footer-socials-list">
-                         <a href="https://www.instagram.com/senorito_food_truck/" target="_blank">Instagram</a>
-                    
-                    </div>
-                </div>
+          <div class="footer-section footer-socials">
+            <h3>Suivez-nous</h3>
+            <div class="footer-socials-list">
+              <a
+                href="https://www.instagram.com/senorito_food_truck/"
+                target="_blank"
+                >Instagram</a
+              >
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-            <div class="footer-bottom-inner">
-                <p>&copy; 2025 Señorito — Tous droits réservés.</p>
-            </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2025 Señorito — Tous droits réservés.</p>
         </div>
+      </div>
     </footer>
-</body>
-<script>
+  </body>
+  <script src="js/cart.js"></script>
+  <script>
     /*--------------------------------------
             formulaire qui envoie un message
             -----------------------------------*/
-        document.getElementById("contact-container").addEventListener("submit", function (e) {
-            e.preventDefault();
+    document
+      .getElementById("contact-container")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
 
-            emailjs.sendForm("service_vrpg4qm", "template_ra0d49n", this)
-                .then(function () {
-                    alert("Votre message a été envoyé avec succès !");
-                }, function (error) {
-                    console.error("Erreur :", error);
-                    alert("Une erreur est survenue, veuillez réessayer.");
-                });
-        });
-</script>
+        emailjs.sendForm("service_vrpg4qm", "template_ra0d49n", this).then(
+          function () {
+            alert("Votre message a été envoyé avec succès !");
+          },
+          function (error) {
+            console.error("Erreur :", error);
+            alert("Une erreur est survenue, veuillez réessayer.");
+          }
+        );
+      });
+  </script>
 </html>
