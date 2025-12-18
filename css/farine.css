@@ -1,0 +1,81 @@
+.farine {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* CONTENEUR DES PRODUITS */
+.farine-contener {
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    margin-bottom: 3rem;
+}
+
+/* CARTE PRODUIT */
+.section-photo {
+    background: #02341BB2;
+    border-radius: 3.5rem;
+    width: 280px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column; /* IMAGE AU-DESSUS / TEXTE EN DESSOUS */
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+   
+}
+.haricot-section{
+    width: 20%;
+}
+
+/* IMAGE */
+.section-photo img {
+    width: 230%;
+    max-width: 100rem;
+    height: 70vh;
+    margin-bottom: 1rem;
+    margin-top: -7rem;
+}
+
+.haricot-section img{
+  width: 230%;
+    max-width: 200rem;
+    height: 70vh;
+    margin-bottom: 1rem;
+    margin-top: -7rem;   
+}
+
+/* TEXTE */
+.info {
+    color: black;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.price p {
+    margin-top: 0.5rem;
+}
+
+/* AJUSTEMENT SPÉCIFIQUE */
+.haricots img {
+    max-width: 160px;
+}
+
+/* VERSION MOBILE */
+@media (max-width: 768px) {
+
+    .farine-contener {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .section-photo {
+        width: 90%;
+        max-width: 320px;
+    }
+}

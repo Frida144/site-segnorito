@@ -1,0 +1,157 @@
+.conserve{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.conserve-contener{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+}
+.section-photo{
+    background: #02341BB2;
+    border-radius: 3.5rem;
+    width: 70%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+  
+    
+   
+}
+
+.section-photo img{
+    width: 200%;
+    height: 40vh;
+    margin-left: 4rem;
+    
+}
+.tradi img,
+.mexico img{
+    margin-top: 2rem;
+    
+}
+
+@media (max-width: 768px){
+    .conserve-contener{
+        flex-direction: column;
+        gap: 7rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-photo{
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+    .info{
+        margin-right: 7rem;
+    }
+}
+.info{
+    display: flex;
+   flex-direction: column;
+   margin-right: 4rem;
+   
+   height: auto;
+   align-items: center;
+}
+
+.info p{
+    color: black;
+    font-size: 1.7rem;
+    
+}
+.price p{
+    text-align: end;
+    
+}
+
+/*section 2*/
+
+.conserve2{
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+}
+.conserve2-contener{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+}
+.section2-photo{
+    background: #02341BB2;
+    border-radius: 3.5rem;
+    width: 75%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+  
+    
+   
+}
+
+.section2-photo img{
+    width: 200%;
+    height: 40vh;
+    margin-left: 4rem;
+    
+}
+.pico img,
+.salsa img,
+.verte img{
+    margin-top: 1rem;
+    
+}
+
+@media (max-width: 768px){
+    .conserve2-contener{
+        flex-direction: column;
+        gap: 7rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .section2-photo{
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+    .info2{
+        margin-right: 7rem;
+    }
+}
+.info2{
+    display: flex;
+   flex-direction: column;
+   margin-right: 4rem;
+   
+   height: auto;
+   align-items: center;
+}
+
+.info2 p{
+    color: black;
+    font-size: 1.7rem;
+    
+}
+.price2 p{
+    text-align: end;
+    
+}
+.price p{
+    text-align: center;
+    
+}
+.info h3 ,
+.info2 h3{
+    color: black;
+    text-align: center;
+}

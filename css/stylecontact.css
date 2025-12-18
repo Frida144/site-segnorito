@@ -157,6 +157,7 @@ html{
 @media (max-width: 768px) {
    .btn{
     margin-left: auto;
+    width: 50%;
    }
     }
 

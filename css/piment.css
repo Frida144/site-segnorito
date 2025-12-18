@@ -1,0 +1,49 @@
+.presentation{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.container{
+    background: #02341BB2;
+    border-radius: 3.5rem;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.container img{
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .content{
+        flex-direction: column;
+        gap: 12rem;
+    }
+    .container{
+        width: 50%;
+        height: auto;
+    }
+    .container img{
+     width: 100%;
+    }
+}
+
+
+.text p{
+    color: black;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.text p strong{
+    text-align: center;
+    
+}
