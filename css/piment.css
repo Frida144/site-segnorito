@@ -32,7 +32,7 @@
 .container {
     background: #02341BB2;
     border-radius: 2rem;
-    min-height: 420px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
