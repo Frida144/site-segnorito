@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panier — Señorito</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/panier.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="header">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <ul id="nav-menu" class="nav-items">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="epicerie.html">Épicerie</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="panier.html">Panier (<span id="cart-count">0</span>)</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="cart-page">
+      <h1>Votre panier</h1>
+      <div id="cart-items" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <div>Total : <strong id="cart-total">0,00€</strong></div>
+        <div class="cart-actions">
+          <button id="clear-cart">Vider le panier</button>
+          <button id="checkout">Valider la commande</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2025 Señorito — Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script>
+      // actions for panier page
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("clear-cart").addEventListener("click", () => {
+          localStorage.removeItem("senorito_cart_v1");
+          location.reload();
+        });
+
+        document.getElementById("checkout").addEventListener("click", () => {
+          alert("Procéder au paiement — fonctionnalité non implémentée.");
+        });
+      });
+    </script>
+  </body>
+</html>

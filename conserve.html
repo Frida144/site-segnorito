@@ -1,228 +1,301 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conserves</title>
-    <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styleepicerie.css">
-    <link rel="stylesheet" href="css/conserve.css">
-</head>
-<body>
-   
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleepicerie.css" />
+    <link rel="stylesheet" href="css/conserve.css" />
+  </head>
+  <body>
     <!-- ======================================================
         BARRE DE NAVIGATION FIXE EN HAUT DE LA PAGE
     ====================================================== -->
     <header class="navbar">
-        <nav class="header">
-            <!--Logo-->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="photo du logo"> </a>
-            </div>
-            <!-- Checkbox caché pour gérer l'état du menu -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <nav class="header">
+        <!--Logo-->
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="photo du logo" />
+          </a>
+        </div>
+        <!-- Checkbox caché pour gérer l'état du menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-            <!-- Bouton burger -->
-            <label for="menu-toggle" class="burger">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </label>
+        <!-- Bouton burger -->
+        <label for="menu-toggle" class="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </label>
 
-            <ul id="nav-menu" class="nav-items">
-              <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="epicerie.html">Epicérie fine</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </header> 
+        <ul id="nav-menu" class="nav-items">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="epicerie.html">Epicérie fine</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+          <li>
+            <a href="panier.html">Panier (<span id="cart-count">0</span>)</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-     <section class="nav">
+      <section class="nav">
         <div class="nav-container">
-             <div class="nav-img">
-               <img src="images/Buriri1.png" alt="photo du logo" >
-            </div> 
-            <div class="titre">
-                <a href="epicerie.html"><h3>L'épicerie fine de Señoritos</h3></a>
-            </div>
-            <div class="nav-img">
-               <img src="images/Buriri1.png" alt="photo du logo" >
-            </div>
+          <div class="nav-img">
+            <img src="images/Buriri1.png" alt="photo du logo" />
+          </div>
+          <div class="titre">
+            <a href="epicerie.html"><h3>L'épicerie fine de Señoritos</h3></a>
+          </div>
+          <div class="nav-img">
+            <img src="images/Buriri1.png" alt="photo du logo" />
+          </div>
         </div>
-     </section>
-     <section class="menu">
+      </section>
+      <section class="menu">
         <div class="menu-container">
-            <div class="menu-icon">
-                <a href="epicerie.html" class="menu-icon-link" aria-label="Aller à l'épicerie">
-                    <span class="arrow">➜</span>
-                </a>
-            </div>
-            <div class="menu-item">
-                <a href="epice.html"><p>Epices</p></a>
-            </div>
-            <div class="menu-item">
-                <a href="conserve.html"><p>Conserves</p></a>
-            </div>
-            <div class="menu-item">
-                <a href="farine.html"><p>Farines</p></a>
-            </div>
-            <div class="menu-item">
-                <a href="kitdecouverte.html"><p>Kit découverte</p></a>
-            </div>
-            <div class="menu-item">
-                <a href="piment.html"><p>Piments</p></a>
-            </div>
+          <div class="menu-icon">
+            <a
+              href="epicerie.html"
+              class="menu-icon-link"
+              aria-label="Aller à l'épicerie"
+            >
+              <span class="arrow">➜</span>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="epice.html"><p>Epices</p></a>
+          </div>
+          <div class="menu-item">
+            <a href="conserve.html"><p>Conserves</p></a>
+          </div>
+          <div class="menu-item">
+            <a href="farine.html"><p>Farines</p></a>
+          </div>
+          <div class="menu-item">
+            <a href="kitdecouverte.html"><p>Kit découverte</p></a>
+          </div>
+          <div class="menu-item">
+            <a href="piment.html"><p>Piments</p></a>
+          </div>
         </div>
-     </section>
-     <!-- conserves-->
-     <section class="conserve">
+      </section>
+      <!-- conserves-->
+      <section class="conserve">
         <div class="conserve-contener">
-            <!--Guacamole Nachos y Costena-->
-            <div class="nachos">
-                <div class="section-photo">
-                    <img src="images/guaco nachoos.png" alt="Guacamole Nachos y Costena">
-                   
-                </div>
-                  <div class="info">
-                        <h3>Guacamole Nachos y Costena </h3>
-                        <p>Poids net : 950g</p>
-                        <div class="price">
-                            <p><strong>3,50€</strong></p>
-                        </div>
-                    </div>  
+          <!--Guacamole Nachos y Costena-->
+          <div class="nachos">
+            <div class="section-photo">
+              <img
+                src="images/guaco nachoos.png"
+                alt="Guacamole Nachos y Costena"
+              />
+            </div>
+            <div class="info">
+              <h3>Guacamole Nachos y Costena</h3>
+              <p>Poids net : 950g</p>
+              <div class="price">
+                <p><strong>3,50€</strong></p>
               </div>
-                  <!--Guacamole Tradicional-->
-            <div class="tradi">
-                <div class="section-photo">
-                    <img src="images/guaca tradii.png" alt="Guacamole Tradicional">
-                    
-            
-                </div>
-                <div class="info">
-                        <h3>Guacamole Tradicional</h3>
-                        <p>Poids net : 950g</p>
-                        <div class="price">
-                            <p><strong>3€</strong></p>
-                        </div>
-                    </div>
+              <button
+                class="add-to-cart"
+                data-id="conserve-guacamole-nachos"
+                data-name="Guacamole Nachos y Costena"
+                data-price="3.50"
+                data-image="images/guaco nachoos.png"
+              >
+                Ajouter au panier
+              </button>
             </div>
-
-              <!-- Guacamole Mexico-->
-
-            <div class="mexico">
-                <div class="section-photo">
-                    <img src="images/guacoo mexicoo.png" alt="Guacamole Mexico">
-                    
-            
-                </div>
-                <div class="info">
-                        <h3>Guacamole Mexico </h3>
-                        <p>Poids net : 950g</p>
-                        <div class="price">
-                            <p><strong>3,20€</strong></p>
-                        </div>
-                    </div>
+          </div>
+          <!--Guacamole Tradicional-->
+          <div class="tradi">
+            <div class="section-photo">
+              <img src="images/guaca tradii.png" alt="Guacamole Tradicional" />
             </div>
+            <div class="info">
+              <h3>Guacamole Tradicional</h3>
+              <p>Poids net : 950g</p>
+              <div class="price">
+                <p><strong>3€</strong></p>
+              </div>
+              <button
+                class="add-to-cart"
+                data-id="conserve-guacamole-tradi"
+                data-name="Guacamole Tradicional"
+                data-price="3.00"
+                data-image="images/guaca tradii.png"
+              >
+                Ajouter au panier
+              </button>
+            </div>
+          </div>
+
+          <!-- Guacamole Mexico-->
+
+          <div class="mexico">
+            <div class="section-photo">
+              <img src="images/guacoo mexicoo.png" alt="Guacamole Mexico" />
+            </div>
+            <div class="info">
+              <h3>Guacamole Mexico</h3>
+              <p>Poids net : 950g</p>
+              <div class="price">
+                <p><strong>3,20€</strong></p>
+              </div>
+              <button
+                class="add-to-cart"
+                data-id="conserve-guacamole-mexico"
+                data-name="Guacamole Mexico"
+                data-price="3.20"
+                data-image="images/guacoo mexicoo.png"
+              >
+                Ajouter au panier
+              </button>
+            </div>
+          </div>
         </div>
-     </section>
+      </section>
 
-     <!--section 2-->
+      <!--section 2-->
       <section class="conserve2">
         <div class="conserve2-contener">
-            <!--Sauce Tomate Pico de Gallo-->
-            <div class="pico">
-                <div class="section2-photo">
-                    <img src="images/tomate piquee.png" alt="Sauce Tomate Pico de Gallo">
-                   
-                </div>
-                  <div class="info2">
-                        <h3>Sauce Tomate Pico de Gallo</h3>
-                        <p>Poids net : 950g</p>
-                        <div class="price2">
-                            <p><strong>3,50€</strong></p>
-                        </div>
-                    </div>  
+          <!--Sauce Tomate Pico de Gallo-->
+          <div class="pico">
+            <div class="section2-photo">
+              <img
+                src="images/tomate piquee.png"
+                alt="Sauce Tomate Pico de Gallo"
+              />
+            </div>
+            <div class="info2">
+              <h3>Sauce Tomate Pico de Gallo</h3>
+              <p>Poids net : 950g</p>
+              <div class="price2">
+                <p><strong>3,50€</strong></p>
               </div>
-                  <!--Sauce Tomate Sauce Salsa-->
-            <div class="salsa">
-                <div class="section2-photo">
-                    <img src="images/tomate moyennee.png" alt="Sauce Tomate Sauce Salsa">
-                    
-            
-                </div>
-                <div class="info2">
-                        <h3>Sauce Tomate Sauce Salsa </h3>
-                        <p>Poids net : 950g</p>
-                        <div class="price2">
-                            <p><strong>3,50€</strong></p>
-                        </div>
-                    </div>
+              <button
+                class="add-to-cart"
+                data-id="conserve-pico"
+                data-name="Sauce Tomate Pico de Gallo"
+                data-price="3.50"
+                data-image="images/tomate piquee.png"
+              >
+                Ajouter au panier
+              </button>
             </div>
-
-              <!-- Sauce Tomate Salsa Verte-->
-
-            <div class="verte">
-                <div class="section2-photo">
-                    <img src="images/vert tomate.png" alt="Sauce Tomate Salsa Verte">
-                    
-            
-                </div>
-                <div class="info2">
-                        <h3>Sauce Tomate Salsa Verte </h3>
-                        <p>Poids net : 950g</p>
-                        <div class="price2">
-                            <p><strong>3,50€</strong></p>
-                        </div>
-                    </div>
+          </div>
+          <!--Sauce Tomate Sauce Salsa-->
+          <div class="salsa">
+            <div class="section2-photo">
+              <img
+                src="images/tomate moyennee.png"
+                alt="Sauce Tomate Sauce Salsa"
+              />
             </div>
+            <div class="info2">
+              <h3>Sauce Tomate Sauce Salsa</h3>
+              <p>Poids net : 950g</p>
+              <div class="price2">
+                <p><strong>3,50€</strong></p>
+              </div>
+              <button
+                class="add-to-cart"
+                data-id="conserve-salsa"
+                data-name="Sauce Tomate Sauce Salsa"
+                data-price="3.50"
+                data-image="images/tomate moyennee.png"
+              >
+                Ajouter au panier
+              </button>
+            </div>
+          </div>
+
+          <!-- Sauce Tomate Salsa Verte-->
+
+          <div class="verte">
+            <div class="section2-photo">
+              <img
+                src="images/vert tomate.png"
+                alt="Sauce Tomate Salsa Verte"
+              />
+            </div>
+            <div class="info2">
+              <h3>Sauce Tomate Salsa Verte</h3>
+              <p>Poids net : 950g</p>
+              <div class="price2">
+                <p><strong>3,50€</strong></p>
+              </div>
+              <button
+                class="add-to-cart"
+                data-id="conserve-verte"
+                data-name="Sauce Tomate Salsa Verte"
+                data-price="3.50"
+                data-image="images/vert tomate.png"
+              >
+                Ajouter au panier
+              </button>
+            </div>
+          </div>
         </div>
-     </section>
+        <script src="js/cart.js"></script>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-container">
-                <div class="footer-section footer-about">
-                    <h3>Señorito</h3>
-                    <p>Food truck toulousain </p>
-                        <P>Cuisine mexicaine authentique, préparée sur <br>place avec des ingrédients frais.</P>
-                </div>
+      <div class="footer-top">
+        <div class="footer-container">
+          <div class="footer-section footer-about">
+            <h3>Señorito</h3>
+            <p>Food truck toulousain</p>
+            <p>
+              Cuisine mexicaine authentique, préparée sur <br />place avec des
+              ingrédients frais.
+            </p>
+          </div>
 
-                <div class="footer-section footer-nav">
-                    <h3>Navigation</h3>
-                    <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="epicerie.html">Epicérie fine</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                    </ul>
-                </div>
+          <div class="footer-section footer-nav">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="epicerie.html">Epicérie fine</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-section footer-contact">
-                    <h3>Contact</h3>
-                    <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
-                    <p>Email: <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a></p>
-                    <p>Localisation: Toulouse</p>
-                </div>
+          <div class="footer-section footer-contact">
+            <h3>Contact</h3>
+            <p>Téléphone: <a href="tel:+33623946712"> 06 23 94 67 12</a></p>
+            <p>
+              Email:
+              <a href="mailto:contact@señorito.fr"> contact@señorito.fr</a>
+            </p>
+            <p>Localisation: Toulouse</p>
+          </div>
 
-                <div class="footer-section footer-socials">
-                    <h3>Suivez-nous</h3>
-                    <div class="footer-socials-list">
-                        <a href="https://www.instagram.com/senorito_food_truck/" target="_blank">Instagram</a>
-            
-                    </div>
-                </div>
+          <div class="footer-section footer-socials">
+            <h3>Suivez-nous</h3>
+            <div class="footer-socials-list">
+              <a
+                href="https://www.instagram.com/senorito_food_truck/"
+                target="_blank"
+                >Instagram</a
+              >
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-            <div class="footer-bottom-inner">
-                <p>&copy; 2025 Señorito — Tous droits réservés.</p>
-            </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2025 Señorito — Tous droits réservés.</p>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
