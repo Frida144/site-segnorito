@@ -1,172 +1,338 @@
-﻿*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
-}
+﻿        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-/*=========================================
-  carte de visite
-   =========================================*/
-  .card{
-     padding: 3rem 3rem;
-    background: linear-gradient(135deg, rgba(206, 17, 38, 0.10) 0%, rgba(2, 52, 27, 0.05) 100%);
-    
-  }
-   .card-container{
-    width: 80%;
-    margin: auto;
-    background: linear-gradient(135deg, #CE1126 0%, #FF8A8A 100%);
-    padding: 1rem;
-    box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.705);
-    margin-top: 5rem;
-    
-   }
-   .card-container h1{
-    text-align: center;
-    background: linear-gradient(45deg, rgb(171, 220, 171), white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 3rem;
-   }
-   .card-group{
-    margin-top: 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    justify-content: space-around;
-    color: rgb(197, 134, 134);
-    font-size: 1.7rem;
-    line-height: 4rem;
-   }
-   .card-group h3{
-   background: linear-gradient(45deg, rgb(171, 220, 171), white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    }
-   .card-item{
-    margin-bottom: 1.5rem;
-    color: thistle;
+        /*=========================================
+          Carte de visite
+        =========================================*/
+        .card {
+            padding: 3rem;
+            background: linear-gradient(135deg, rgba(206, 17, 38, 0.10) 0%, rgba(2, 52, 27, 0.05) 100%);
+        }
+        
+        .card-container {
+            width: 80%;
+            margin: 5rem auto 0;
+            background: linear-gradient(135deg, #CE1126 0%, #FF8A8A 100%);
+            padding: 2rem;
+            box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.705);
+            border-radius: 1rem;
+        }
+        
+        .card-container h1 {
+            text-align: center;
+            background: linear-gradient(45deg, rgb(171, 220, 171), white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 3rem;
+            font-size: 3rem;
+        }
+        
+        .card-group {
+            margin-top: 2rem;
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            justify-content: space-around;
+            color: rgb(197, 134, 134);
+            font-size: 1.7rem;
+            line-height: 4rem;
+            gap: 2rem;
+        }
+        
+        .card-group h3 {
+            background: linear-gradient(45deg, rgb(171, 220, 171), white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.2rem;
+        }
+        
+        .card-item {
+            margin-bottom: 1.5rem;
+            color: thistle;
+        }
+        
+        .card-item a {
+            color: thistle;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .card-item a:hover {
+            color: rgb(2, 43, 2);
+        }
+        
+        .card-item p {
+            font-size: 1.6rem;
+        }
 
-   }
-   .card-item a{
-    color: thistle;
-    text-decoration: none;
-   }
-   .card-item a:hover{
-    text-decoration: none;
-    color: rgb(2, 43, 2);
-   }
-   .card-item p{
-    font-size: 1.6rem;
-   }
-/*=========================================
-  formulaire de contact
-   =========================================*/
-   .contact{
-    margin: 5rem;
-    padding: 4rem 2rem;
-   }
-.contact-content{
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-top: -3rem;
-  
-}
+        /*=========================================
+          Formulaire de contact
+        =========================================*/
+        .contact {
+            margin: 5rem 2rem;
+            padding: 4rem 2rem;
+        }
+        
+        .contact-content {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1.6rem;
+            color: #333;
+            line-height: 1.8;
+        }
 
+        .contact-form {
+            width: 90%;
+            max-width: 80rem;
+            margin: auto;
+            padding: 3rem;
+            border-radius: 1.5rem;
+            background: #f9f9f9;
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form h1 {
+            text-align: center;
+            color: #02341B;
+            margin-bottom: 3rem;
+            font-size: 3rem;
+        }
 
-   .contact-form{
-    width: 90%;
-    margin: auto;
-    padding: 3rem;
-    border-radius: 1.5rem;
-    line-height: 4rem;
-    
-   }
-   @media (max-width: 768px){
-    .contact-form{
-        width: 100%;
-    }
-    
-    }
-   .contact-form h1{
-   text-align: center;
-   color: #02341B;
-    margin-bottom: 3rem;
-   }
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .contact-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        
+        .contact-group label {
+            color: #02341B;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        
+        .contact-group input,
+        .contact-group textarea {
+            padding: 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            background: white;
+            color: #02341B;
+            outline: none;
+            border: 0.1rem solid rgba(2, 52, 27, 0.15);
+            transition: 0.3s;
+            width: 100%;
+            font-size: 1.6rem;
+            font-family: inherit;
+        }
 
-   .contact-container{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    color: #02341B;
-    font-size: 1.6rem;
-    
-   
-    
-    
-}
-.contact-group label{
-    margin-bottom: .3rem;
+        .contact-group input::placeholder,
+        .contact-group textarea::placeholder {
+            color: #6b6b6b;
+        }
 
-}
-.contact-group input, textarea {
-    padding: 1.5rem ;
-    border: none;
-    border-radius: 0.5rem;
-    background: white;
-    color: #02341B; /* texte sombre pour être lisible */
-    outline: none;
-    border: 0.1rem solid rgba(2,52,27,0.15);
-    transition: 0.3s;
-    width: 100%;
-    font-size: 1.4rem;
-}
+        .contact-group input:focus,
+        .contact-group textarea:focus {
+            box-shadow: 0 0 0 3px rgba(99, 179, 99, 0.12);
+            border-color: #6FCF6F;
+        }
+        
+        .contact-group textarea {
+            resize: vertical;
+            min-height: 12rem;
+        }
+        
+        .btn {
+            margin-top: 2rem;
+            padding: 1.5rem 3rem;
+            border: none;
+            border-radius: 0.5rem;
+            background: linear-gradient(45deg, rgb(64, 150, 64), #02341B);
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            max-width: 30rem;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
 
-/* Placeholder color for better contrast */
-.contact-group input::placeholder,
-.contact-group textarea::placeholder {
-    color: #6b6b6b;
-}
-
-/* Focus state */
-.contact-group input:focus,
-.contact-group textarea:focus {
-    box-shadow: 0 0 0 3px rgba(99, 179, 99, 0.12);
-    border-color: #6FCF6F;
-}
-.btn{
-    margin-top: 2rem;
-    padding: 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    background: linear-gradient(45deg, rgb(64, 150, 64), #02341B);
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 40%;
-    margin-left: 30rem;
-    
-}
-
-@media (max-width: 768px) {
-   .btn{
-    margin-left: auto;
-    width: 50%;
-   }
-.contact-group{
-    width: 100%;
-    flex-direction: row;
-    display: flex;
-    height: 10vh;
-    
-}
-
-
-    }
-
+        /* =========================================
+           MEDIA QUERIES RESPONSIVE
+        ========================================= */
+        
+        /* Tablettes et petits écrans */
+        @media (max-width: 768px) {
+            html {
+                font-size: 56.25%; /* 9px */
+            }
+            
+            .card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .card-container {
+                width: 95%;
+                padding: 2rem 1.5rem;
+                margin-top: 3rem;
+            }
+            
+            .card-container h1 {
+                font-size: 2.4rem;
+                margin-bottom: 2rem;
+            }
+            
+            .card-group {
+                flex-direction: column;
+                gap: 3rem;
+                line-height: 3rem;
+            }
+            
+            .contact {
+                margin: 3rem 1rem;
+                padding: 2rem 1rem;
+            }
+            
+            .contact-content {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+                padding: 0 1rem;
+            }
+            
+            .contact-form {
+                width: 100%;
+                padding: 2rem 1.5rem;
+            }
+            
+            .contact-form h1 {
+                font-size: 2.4rem;
+                margin-bottom: 2rem;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: none;
+                font-size: 1.8rem;
+                padding: 1.5rem;
+            }
+        }
+        
+        /* Smartphones */
+        @media (max-width: 480px) {
+            html {
+                font-size: 50%; /* 8px */
+            }
+            
+            .card {
+                padding: 1.5rem 1rem;
+            }
+            
+            .card-container {
+                width: 98%;
+                padding: 1.5rem 1rem;
+                margin-top: 2rem;
+            }
+            
+            .card-container h1 {
+                font-size: 2rem;
+            }
+            
+            .card-group h3 {
+                font-size: 1.8rem;
+            }
+            
+            .card-item p {
+                font-size: 1.4rem;
+            }
+            
+            .contact {
+                margin: 2rem 0.5rem;
+                padding: 1.5rem 0.5rem;
+            }
+            
+            .contact-content {
+                font-size: 1.4rem;
+                padding: 0 0.5rem;
+            }
+            
+            .contact-form {
+                padding: 1.5rem 1rem;
+                border-radius: 1rem;
+            }
+            
+            .contact-form h1 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .contact-container {
+                gap: 1.5rem;
+            }
+            
+            .contact-group label {
+                font-size: 1.5rem;
+            }
+            
+            .contact-group input,
+            .contact-group textarea {
+                padding: 1.2rem;
+                font-size: 1.5rem;
+            }
+            
+            .contact-group textarea {
+                min-height: 10rem;
+            }
+            
+            .btn {
+                font-size: 1.6rem;
+                padding: 1.4rem;
+                margin-top: 1.5rem;
+            }
+        }
+        
+        /* Très petits écrans */
+        @media (max-width: 360px) {
+            html {
+                font-size: 45%; /* 7.2px */
+            }
+            
+            .card-container {
+                width: 100%;
+                border-radius: 0;
+            }
+            
+            .contact-form {
+                border-radius: 0.5rem;
+            }
+        }
+ 
